@@ -1,0 +1,14 @@
+{{ "<!-- about me -->" | safeHTML }}
+<div class="widget widget-about">
+  {{ with site.Params.about_me }}
+  <h4 class="widget-title">{{ .Title }}</h4>
+  <img class="img-fluid" loading="lazy" src="{{ .image | absURL }}" alt="{{site.Params.author}}">
+  <p>{{ .bio | markdownify }}</p>
+  <ul class="list-inline social-icons mb-3">
+    {{ range site.Params.social }}
+    <li class="list-inline-item"><a href="{{.link | safeURL }}"><i class="{{.icon}}"></i></a></li>
+    {{ end }}
+  </ul>
+  <a href="{{`about-me/` | relLangURL }}" class="btn btn-primary mb-2">{{ i18n "about_me" }}</a>
+  {{ end }}
+</div>

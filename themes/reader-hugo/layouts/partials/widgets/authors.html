@@ -1,0 +1,27 @@
+{{ "<!-- authors -->" | safeHTML }}
+<div class="widget widget-author">
+  <h4 class="widget-title">{{ i18n "authors" }}</h4>
+  {{ range first 3 (where site.RegularPages "Section" "author" )}}
+  <div class="media align-items-center">
+    <div class="mr-3">
+      {{ if .Params.image }}
+      {{ $imagePath:= .Params.image }}
+      {{ if (fileExists (add "assets/" $imagePath)) }}
+      {{ $image:= resources.Get $imagePath }}
+      {{ $imageSM:= $image.Fill "70x70" }}
+      {{ .Scratch.Set "image" $imageSM.RelPermalink }}
+      {{ else }}
+      {{ .Scratch.Set "image" ($imagePath | absURL) }}
+      {{ end }}
+      <img class="widget-author-image" loading="lazy" src="{{.Scratch.Get `image`}}" alt="{{ .Title }}">
+      {{else if .Params.Email}}
+      <img class="widget-author-image" loading="lazy" src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=70&pg&d=identicon">
+      {{ end }}
+    </div>
+    <div class="media-body">
+      <h5 class="mb-1"><a class="post-title" href="{{.Permalink}}">{{ .Title }}</a></h5>
+      <span>{{ .Params.Description | markdownify }}</span>
+    </div>
+  </div>
+  {{ end }}
+</div>

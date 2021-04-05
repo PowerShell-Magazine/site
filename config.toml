@@ -1,0 +1,184 @@
+######################## default configuration ####################
+baseURL = "https://www.powershellmagazine.com"
+title = "PowerShell Magazine | For the most powerful community"
+theme = "reader-hugo"
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "20"
+# google analytics
+googleAnalytics = "" # Ex: UA-123-45
+# disqus short name
+disqusShortname = "themefisher-template" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = [] # desable language from here
+
+############################# Output ##############################
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
+# site variables
+[params.variables]
+primary_color = "#277dca"
+text_color = "#555"
+text_color_dark = "#333"
+text_color_light = "#777"
+body_color = "#fff"
+border_color = "#EBEBEB"
+black = "#000"
+white = "#fff"
+light = "#FFFFFF"
+
+# font variable
+# Give your font name from google font. add font weight using ":wght@" and separate by ";"
+# example: "Work Sans:wght@400;500;600"
+# primary_font = "Nunito Sans:wght@400;600;700;800"
+primary_font = "Nunito Sans:ital,wght@0,400;0,600;0,700;0,800;1,800"
+primary_font_type = "sans-serif" # [serif/sans-serif]
+secondary_font = ""
+secondary_font_type = "" # [serif/sans-serif]
+icon_font = "Font Awesome 5 Free"
+
+############################# Plugins ##############################
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+[[params.plugins.css]]
+link = "plugins/slick/slick.min.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/jQuery/jquery.min.js"
+[[params.plugins.js]]
+link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
+attributes = "crossorigin='anonymous' defer='defer' data-search-pseudo-elements"
+[[params.plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+[[params.plugins.js]]
+link = "plugins/slick/slick.min.js"
+[[params.plugins.js]]
+link = "plugins/instafeed/instafeed.min.js"
+[[params.plugins.js]]
+link = "plugins/search/fuse.min.js"
+[[params.plugins.js]]
+link = "plugins/search/mark.js"
+[[params.plugins.js]]
+link = "plugins/search/search.js"
+
+
+#################### default parameters ################################
+[params]
+favicon = "images/favicon.ico"
+logo = "images/logo.png"
+logo_width = "400px"
+menu_align = "center" # available option (left, right, or center )
+# Meta data
+author = "PowerShell Magazine"
+description = "For the most powerful community"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# Go to https://formspree.io, and create an account by click on signup button. Now verify your email address by click on varify button in the mail you got in your inbox. form action will looks like this contact_form_action = "https://formspree.io/your.name@email.com/" 
+
+# search
+search = true
+# featured
+featured_post = true
+# layout
+post_layout= "grid" # layout value (full, grid or list)
+# Sidebar
+sidebar = "right" # sidebar value (left, right or false)
+# main taxonomy that will show at header and post card
+main_taxonomy = "tag" # optional value (tag or category)
+
+# Preloader
+[params.preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Subscription
+[params.subscription]
+enable = true
+# mailchimp subsciption
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+
+# promotion
+[params.promotion]
+title = "Advertise here!"
+content = ""
+image = "images/promotion.jpg"
+button_label = "Get Started"
+button_link = "https://themefisher.com/"
+
+# cookies
+[params.cookies]
+enable = false
+expire_days = 2
+
+######################## sidebar widgets #########################
+[params.widgets]
+#sidebar = ["search", "about-me", "promotion", "authors", "subscription", "categories", "recent-post", "tags", "social"]
+sidebar = ["social", "search", "subscription", "recent-post"]
+# available widget : search,about-me,authors,categories,tags,recent-post,social,promotion,subscription
+
+############################# social site ########################
+[[params.social]]
+name = "facebook"
+icon = "fab fa-facebook" # Fontawesome Icons : https://fontawesome.com/icons
+link = "https://www.facebook.com/powershellmagazine"
+
+[[params.social]]
+name = "twitter"
+icon = "fab fa-twitter" # Fontawesome Icons : https://fontawesome.com/icons
+link = "https://twitter.com/powershellmag"
+
+[[params.social]]
+name = "github"
+icon = "fab fa-github" # Fontawesome Icons : https://fontawesome.com/icons
+link = "https://github.com/psmag"
+
+[[params.social]]
+name = "youtube"
+icon = "fab fa-youtube" # Fontawesome Icons : https://fontawesome.com/icons
+link = "https://www.youtube.com/channel/UCfgQyaDTC-vwVEvkfYCTg1A"
+
+################################### English language #####################################
+[Languages.en]
+languageName = "En"
+languageCode = "en-us"
+contentDir = "content/english"
+weight = 1
+#heading = "What Would You <br> Like To Read Today?"
+
+#[Languages.en.about_me]
+#title = "Hello there, Welcome to PowerShell Magazine!"
+#image = "images/author.jpg"
+#bio = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel in in donec iaculis tempus odio nunc laoreet . Libero ullamcorper."
+
+############# english navigation ##############
+
+# Dropdown menu
+[[Languages.en.menu.main]]
+weight = 1
+name = "Home"
+hasChildren = false
+
+[[Languages.en.menu.main]]
+name = "About"
+URL = "about"
+weight = 2
+
+[[Languages.en.menu.main]]
+name = "Write For Us"
+URL = "write-for-us"
+weight = 3
+
+[[Languages.en.menu.main]]
+weight = 4
+name = "Disclaimer"
+url = "disclaimer"
+
