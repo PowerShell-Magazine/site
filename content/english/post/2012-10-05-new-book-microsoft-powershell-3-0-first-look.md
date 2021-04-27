@@ -7,7 +7,6 @@ url: /2012/10/05/new-book-microsoft-powershell-3-0-first-look/
 categories:
   - News
 tags:
-  - Adam Driscoll
   - News
 
 ---
