@@ -1,5 +1,5 @@
 ---
 title: "Homepage List"
-post_layout: "list"
-sidebar : "false"
+post_layout: "grid"
+sidebar : "true"
 ---

@@ -1,7 +1,7 @@
 ---
 title: Pester Result Reporting With Suggestions And XSL Support
 author: Prasoon Karunan v
-type: popular
+type: regular
 date: 2019-07-25T16:00:07+00:00
 url: /2019/07/25/pester-result-reporting-with-suggestions-and-xsl-support/
 post_views_count:

@@ -5,14 +5,9 @@ type: post
 date: 2013-01-23T19:01:58+00:00
 url: /2013/01/23/pstip-passing-local-variables-to-a-remote-session-in-powershell-3-0/
 categories:
-  - Columns
   - Tips and Tricks
 tags:
-  - modifiers
-  - PowerShell
-  - PSTip
-  - scope
-  - using
+  - Tips and Tricks
 
 ---
 **Note**: This tip requires PowerShell 3.0 or above.

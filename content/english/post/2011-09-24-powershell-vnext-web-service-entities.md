@@ -11,10 +11,8 @@ post_views_count:
   - 1639
 categories:
   - News
-  - oData API
 tags:
   - News
-  - API
 
 ---
 With the release of [Windows 8][1] and [PowerShell V3 CTP1][2], Microsoft added [Management ODATA Web Services Dev. Tools][3] which lets you create PowerShell web services.

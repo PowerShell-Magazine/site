@@ -7,9 +7,9 @@ paginate = "6"
 # post excerpt
 summaryLength = "20"
 # google analytics
-googleAnalytics = "" # Ex: UA-123-45
+googleAnalytics = ""
 # disqus short name
-disqusShortname = "themefisher-template" # get your shortname form here : https://disqus.com
+disqusShortname = "powershellmagazine" #
 # disable language
 disableLanguages = [] # desable language from here
 
@@ -80,7 +80,7 @@ menu_align = "center" # available option (left, right, or center )
 author = "PowerShell Magazine"
 description = "For the most powerful community"
 # contact form action
-contact_form_action = "#" # contact form works with https://formspree.io
+contact_form_action = "https://formspree.io/f/xknkobrj" # contact form works with https://formspree.io
 # Go to https://formspree.io, and create an account by click on signup button. Now verify your email address by click on varify button in the mail you got in your inbox. form action will looks like this contact_form_action = "https://formspree.io/your.name@email.com/" 
 
 # search
@@ -104,7 +104,7 @@ preloader = "" # use jpg, png, svg or gif format.
 enable = true
 # mailchimp subsciption
 mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
-mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+mailchimp_form_name = "d9c5e03e3a73a864ce87895170837fcd-us1"
 
 # promotion
 [params.promotion]

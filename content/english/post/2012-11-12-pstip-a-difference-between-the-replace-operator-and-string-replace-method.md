@@ -6,8 +6,10 @@ date: 2012-11-12T19:00:25+00:00
 url: /2012/11/12/pstip-a-difference-between-the-replace-operator-and-string-replace-method/
 categories:
   - Tips and Tricks
+  - Brainteaser
 tags:
-  - Brainteasers
+  - Brainteaser
+  - Tips and Tricks
 
 ---
 The -replace operator  takes a regular expression (regex) replacement rule as input and replaces every match with the replacement string. The operator itself is used as shown in the following schema: `<input string> -replace <replacement rule>,<replacement string>`
