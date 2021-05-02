@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://www.powershellmagazine.com"
+baseURL = "https://psmag.github.io"
 title = "PowerShell Magazine | For the most powerful community"
 theme = "reader-hugo"
 # post pagination
