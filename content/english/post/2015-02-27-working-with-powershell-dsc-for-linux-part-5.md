@@ -16,7 +16,6 @@ tags:
   - PowerShell DSC
   - linux
   - OMI
-
 ---
 Managing Linux can become a challenge if you don&#8217;t have some way of distributing credentials. There are several options: joining Active Directory domain and using shared credentials for both Linux and Windows, using other LDAP implementation to authenticate or distribute users/groups using Configuration Management tools. In the final part of Linux DSC series we will take a look at last two resources &#8211; _nxUser_ and _nxGroup_ &#8211; that should help us manage user and groups on Linux systems. We will also take a look at few debugging techniques that should help you identify a reason why given configuration fails.
 
@@ -56,7 +55,7 @@ print crypt(
 )
 ```
 
-There are at least few methods to copy this file over to Linux box: scp, sftp, or even nxFile resource. Once the script is there, we can call it. Again: there are few options available. I decided to use Posh-Ssh module <a href="http://104.131.21.239/2014/07/03/posh-ssh-open-source-ssh-powershell-module/" target="_blank">described in PowerShell Magazine a while ago</a>:
+There are at least few methods to copy this file over to Linux box: scp, sftp, or even nxFile resource. Once the script is there, we can call it. Again: there are few options available. I decided to use Posh-Ssh module <a href="/2014/07/03/posh-ssh-open-source-ssh-powershell-module/" target="_blank">described in PowerShell Magazine a while ago</a>:
 
 ```powershell
 $linuxSession = New-SSHSession -ComputerName 192.168.200.104 -Credential $bielawbCred -AcceptKey $true

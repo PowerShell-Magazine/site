@@ -34,7 +34,7 @@ Congratulations to the winners! Our editorial staff will reach out to you very s
 
 Happy New Year!
 
-[1]: http://104.131.21.239/2011/11/29/call-for-writers-share-your-experiences-and-help-new-users/
+[1]: /2011/11/29/call-for-writers-share-your-experiences-and-help-new-users/
 [2]: http://www.youtube.com/user/PowerShellMagazine
 [3]: http://unlockpowershell.wordpress.com/
 [4]: http://www.trainsignal.com/

@@ -8,13 +8,12 @@ categories:
   - How To
 tags:
   - How To
-
 ---
 One of PowerShell strengths has always been string manipulation. PowerShell has very good support for regular expressions&#8211;using both cmdlets and operators. There are cmdlets to import and export several text file formats: XML, JSON, CSV. I use regular expressions in PowerShell almost every day. There is one problem with regular expressions though: it&#8217;s a language that is easier to write than read. And, it can be very complex when you try to process structured text files, especially if structure is not limited to single line and is not in one of natively supported formats.
 
 ### New kid on the block
 
-On September 4, a new version of <a href="http://104.131.21.239/2014/09/05/windows-management-framework-5-0-september-2014-preview-is-available-for-download/" target="_blank">Windows Management Framework 5.0 Preview was announced</a>. This release comes with a cmdlet, _ConvertFrom-String_, that simplifies processing of any structured text. It does this in a relatively straightforward fashion. You don&#8217;t have to be a regex expert to get what you want, you just need to understand output of your command, a content of your log file, a structure of data exported from your database. As long as you can see a pattern and &#8216;explain it&#8217; to PowerShell, PowerShell will turn a structured text into objects.
+On September 4, a new version of <a href="/2014/09/05/windows-management-framework-5-0-september-2014-preview-is-available-for-download/" target="_blank">Windows Management Framework 5.0 Preview was announced</a>. This release comes with a cmdlet, _ConvertFrom-String_, that simplifies processing of any structured text. It does this in a relatively straightforward fashion. You don&#8217;t have to be a regex expert to get what you want, you just need to understand output of your command, a content of your log file, a structure of data exported from your database. As long as you can see a pattern and &#8216;explain it&#8217; to PowerShell, PowerShell will turn a structured text into objects.
 
 _ConvertFrom-String_ has two modes. In the first one (basic delimited parsing) it&#8217;s not much different from _ConvertFrom-Csv_. Processing is performed line by line, and there is no way to identify input header other than using _Select-Object -Skip_ to ignore the first few lines. You can specify delimiter, names of properties, and you are good to go. But that&#8217;s not scenario in which this new cmdlets shines. I would argue that using _ConvertFrom-Csv_ is as easy, and is possible in PowerShell 2.0.
 
@@ -157,9 +156,7 @@ Get-Content .\opera.adr | ConvertFrom-String -TemplateContent $TemplateAdr |
     Format-Table -AutoSize Name, Mail
 
 Name              Mail
-
 ----              ----
-
 Justynka          JUSTYNA66@gmail.com
 Leszek            Leszek@domena.pl
 Iwona Kwiatkowska iwon.kwiat@op.pl

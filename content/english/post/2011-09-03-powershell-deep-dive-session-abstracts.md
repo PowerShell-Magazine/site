@@ -4,15 +4,6 @@ author: Shay Levy
 type: post
 date: 2011-09-03T11:22:46+00:00
 url: /2011/09/03/powershell-deep-dive-session-abstracts/
-featured_image: /wp-content/uploads/2012/01/logo-250x250.png
-dsq_thread_id:
-  - 413983610
-views:
-  - 4431
-tweet_trim_url_2:
-  - http://104.131.21.239/?p=173
-post_views_count:
-  - 1021
 categories:
   - News
 tags:

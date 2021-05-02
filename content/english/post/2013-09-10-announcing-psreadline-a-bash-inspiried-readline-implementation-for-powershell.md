@@ -12,7 +12,6 @@ tags:
   - PSReadLine
   - Modules
   - News
-
 ---
 [Jason Shirk][1] is back! He just announced the release of his new PowerShell project [PSReadLine][2]. In PowerShell 3.0, a hook was added to replace the command line editing experience in the console and Jason wrote a new module to take advantage of this hook. This module is really meant for PowerShell console and not for ISE.
 
@@ -32,5 +31,5 @@ A quick overview of this module and how it can be used has been documented at <
 
 Go ahead and [download the module][2]. If you are interested, you can even fork it and add your own set of features.
 
-[1]: http://104.131.21.239/2011/11/03/an-interview-with-powershell-expert-jason-shirk/
+[1]: /2011/11/03/an-interview-with-powershell-expert-jason-shirk/
 [2]: https://github.com/lzybkr/PSReadLine

@@ -67,35 +67,35 @@ _Author_ shows the published version of the runbook:
 
 _Draft_ provides the ability to edit and test the code defined in the runbook:
 
-<a href="http://104.131.21.239/wp-content/uploads/2014/04/image008.jpg" rel="lightbox[9328]"><img alt="image008" src="http://104.131.21.239/wp-content/uploads/2014/04/image008.jpg" width="538" height="551" /></a>
+![](/images/sma008.png)
 
 When you authoring a runbook, the runbook has to start with the keyword _workflow_ followed by the name of the runbook. Optionally a param block can be provided in order to define parameters for the runbook. The actual code is defined after the param block.
 
 If parameters are defined, values for these may be provided when starting the runbook:
 
-<a href="http://104.131.21.239/wp-content/uploads/2014/04/image009.jpg" rel="lightbox[9328]"><img alt="image009" src="http://104.131.21.239/wp-content/uploads/2014/04/image009.jpg" width="428" height="363" /></a>
+![](/images/sma009.png)
 
 These values can also be provided if the runbook is scheduled.
 
 Schedules may be defined in the next menu item:
 
-<a href="http://104.131.21.239/wp-content/uploads/2014/04/image010.jpg" rel="lightbox[9328]"><img alt="image010" src="http://104.131.21.239/wp-content/uploads/2014/04/image010.jpg" width="410" height="184" /></a>
+![](/images/sma010.png)
 
-<a href="http://104.131.21.239/wp-content/uploads/2014/04/image011.jpg" rel="lightbox[9328]"><img alt="image011" src="http://104.131.21.239/wp-content/uploads/2014/04/image011.jpg" width="176" height="254" /></a>
+![](/images/sma011.png)
 
 The last menu item for a runbook is _Configure_, giving options such as providing a description, tags and enabling debugging and logging:
 
-<a href="http://104.131.21.239/wp-content/uploads/2014/04/image012.jpg" rel="lightbox[9328]"><img alt="image012" src="http://104.131.21.239/wp-content/uploads/2014/04/image012.jpg" width="405" height="482" /></a>
+![](/images/sma012.png)
 
 Debugging and logging will write a lot of data in the database, and should only be enabled during troubleshooting.
 
 The last item we will have a look at in the Automation portal in Windows Azure Pack is _Assets_:
 
-<a href="http://104.131.21.239/wp-content/uploads/2014/04/image013.jpg" rel="lightbox[9328]"><img alt="image013" src="http://104.131.21.239/wp-content/uploads/2014/04/image013.jpg" width="500" height="372" /></a>
+![](/images/sma013.png)
 
 An asset (also called a global resource) may be a PowerShell module or one of the following:
 
-<a href="http://104.131.21.239/wp-content/uploads/2014/04/image014.jpg" rel="lightbox[9328]"><img alt="image014" src="http://104.131.21.239/wp-content/uploads/2014/04/image014.jpg" width="435" height="204" /></a>
+![](/images/sma014.png)
 
 _Connections_ are connections to other systems, such as other System Center components like Data Protection Manager and Virtual Machine Manager. _Credentials_, _variables_, and _certificates_ can be defined in order to avoid hardcoding them in runbooks. The last type of asset is a _schedule_, which we have already looked at. All assets are globally available and shared among all runbooks.
 
@@ -105,7 +105,7 @@ When PowerShell Workflow is used outside of SMA, state («persistence») is stor
 
 This makes it possible to build a highly available automation platform, by configuring a highly available SQL service (using clustering or AlwaysOn) as well as 2 or more servers with the SMA Runbook Worker and web service installed:
 
-<a href="http://104.131.21.239/wp-content/uploads/2014/04/image015.png" rel="lightbox[9328]"><img alt="image015" src="http://104.131.21.239/wp-content/uploads/2014/04/image015.png" width="398" height="477" /></a>
+![](/images/sma015.png)
 
 Source of illustration: System Center Orchestrator Engineering Team Blog
 
@@ -118,14 +118,6 @@ Since SMA is based on PowerShell Workflow it&#8217;s possible to automate everyt
 The first version of the product lacks some functionality available in Orchestrator, such as the ability to configure runbook permissions. This is a feature an enterprise using SMA would find useful in order to delegate access to runbooks based on, for example, Active Directory security groups.
 
 There is no official statement regarding the strategy around co-existence of Orchestrator and SMA in the future, but it&#8217;s not unlikely that SMA will overtake Orchestrator&#8217;s role in the Microsoft ecosystem when more functionality comes in place.
-
-## Resources
-
-[Overview of Service Management Automation
-
-][4] [Microsoft Azure Automation preview
-
-][5] <a style="line-height: 1.5em;" href="http://technet.microsoft.com/en-us/library/dn296435.aspx">Windows Azure Pack for Windows Server<br /> </a><a style="line-height: 1.5em;" href="http://technet.microsoft.com/en-us/library/jj134242.aspx">Getting Started with Windows PowerShell Workflow<br /> </a><a style="line-height: 1.5em;" href="http://aka.ms/IntroToSMA">Intro to SMA<br /> </a><a style="line-height: 1.5em;" href="http://social.technet.microsoft.com/Search/en-US?query=SMA%20Capabilities%20in%20Depth&rn=System%20Center:%20Orchestrator%20Engineering%20Team%20Blog&rq=site:blogs.technet.com/b/orchestrator/&beta=0&ac=4">SMA Capabilities in Depth</a>
 
 [1]: http://en.wikipedia.org/wiki/Windows_Workflow_Foundation
 [2]: http://blogs.msdn.com/b/powershell/archive/2012/03/17/when-windows-powershell-met-workflow.aspx

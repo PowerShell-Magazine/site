@@ -16,11 +16,10 @@ tags:
   - PowerShell DSC
   - Linux
   - OMI
-
 ---
 PowerShell DSC for Linux caught my attention immediately after it was announced. Being able to control configuration of Linux box with pure PowerShell code is huge for anybody who is interested in cross-platform solutions build in PowerShell. PowerShell DSC depends on OMI and that makes it even more interesting. I fell in love with WMI at first sight and OMI is open source implementation of WMI for (almost) any device/operating system.
 
-If you are also interested in this subject you&#8217;ve probably read Ravi&#8217;s article on <a href="http://104.131.21.239/2014/05/21/installing-and-configuring-dsc-for-linux/" target="_blank">&#8220;Installing and configuring DSC for Linux&#8221;</a>. I&#8217;ve also read it and use it almost every time I was installing DSC for Linux. I would either check prerequisites, or read details about DSC installation procedure. But if you thought that DSC operates the way it should once it is installed, you should think again.
+If you are also interested in this subject you&#8217;ve probably read Ravi&#8217;s article on <a href="/2014/05/21/installing-and-configuring-dsc-for-linux/" target="_blank">Installing and configuring DSC for Linux</a>. I&#8217;ve also read it and use it almost every time I was installing DSC for Linux. I would either check prerequisites, or read details about DSC installation procedure. But if you thought that DSC operates the way it should once it is installed, you should think again.
 
 This series of articles will describe all the things that I discovered while playing with Linux DSC &#8212; issues I had to address, problems I had to solve. This should be a nice supplement to the modified version of <a href="https://github.com/bielawb/WPSDSCLinux" target="_blank">Linux DSC CTP</a> that you can find under my GitHub account. Problems I&#8217;ve had identified didn&#8217;t surprise me. Issues are expected side effects of working with CTP version of any product.
 

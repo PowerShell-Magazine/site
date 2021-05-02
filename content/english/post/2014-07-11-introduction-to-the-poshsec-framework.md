@@ -20,7 +20,7 @@ In March of 2013 I had the desire to create an open source Security Information 
 
 ### PoshSec
 
-In June of 2013, I attended a conference called BSides Detroit. At this conference I attended a talk that was presented by <a href="https://twitter.com/mwjcomputing" target="_blank">Matt Johnson</a>. Matt&#8217;s talk was about a project he was working on called PoshSec. Matt recently submitted an <a href="http://104.131.21.239/2014/07/10/introduction-to-poshsec/" target="_blank">article</a> on the history of PoshSec that I encourage you to read.
+In June of 2013, I attended a conference called BSides Detroit. At this conference I attended a talk that was presented by <a href="https://twitter.com/mwjcomputing" target="_blank">Matt Johnson</a>. Matt&#8217;s talk was about a project he was working on called PoshSec. Matt recently submitted an <a href="/2014/07/10/introduction-to-poshsec/" target="_blank">article</a> on the history of PoshSec that I encourage you to read.
 
 PoshSec was short for PowerShell Security. Matt talked about how they were using PowerShell to improve the security posture of organizations with a series of cmdlets and scripts. I loved what he was doing and I was really excited about the project. I realized that what I was attempting to create and what Matt was working on could be combined into a new project.
 
@@ -76,7 +76,7 @@ I created psf to have its own runspace and individual pipelines for each script,
 
 The initial view of psf has many elements available. You have your domains listed, any systems that were discovered in your scan, a listing of scripts, the listing of PowerShell commands, aliases, and functions, and a section for alerts and active scripts. I even have a tab for a PowerShell command line interface so you can still issue commands via a command line. You can also launch a separate instance of the command prompt or PowerShell with buttons on the toolbar.
 
-![](/images/image00511.gif)
+![](/images/image00511.gif)Jun
 
 ### Exposed Elements
 

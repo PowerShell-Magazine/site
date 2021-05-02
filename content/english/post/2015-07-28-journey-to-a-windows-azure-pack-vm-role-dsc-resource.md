@@ -15,7 +15,6 @@ categories:
 tags:
   - Azure Pack
   - PowerShell DSC
-
 ---
 In this series,
 
@@ -113,5 +112,5 @@ In the next article, we’ll look at working with my PowerShell module which wou
 [4]: https://github.com/PowerShell/xAzurepack
 [5]: https://github.com/bgelens/WAPTenantPublicAPI
 [6]: https://github.com/bgelens/cWAPack
-[7]: http://104.131.21.239/2015/07/13/git-for-it-professionals-getting-started-2/
+[7]: /2015/07/13/git-for-it-professionals-getting-started-2/
 [8]: https://msdn.microsoft.com/en-us/library/dn776451.aspx

@@ -15,15 +15,14 @@ categories:
 tags:
   - PowerShell DSC
   - Linux
-
 ---
-New version of PowerShell DSC for Linux doubled the number of resources available. Initial batch in CTP covered basics: nxUser to create and manage users, nxGroup to define groups and manage group members, nxFile to create and modify files, nxService to start, stop, enable, and disable daemons, and nxScript to cover anything that couldn&#8217;t be done with other resources. We covered these resources in the <a href="http://104.131.21.239/2015/02/21/working-with-powershell-dsc-for-linux-part-2/" target="_blank">previous series</a> and they haven&#8217;t changed much since.
+New version of PowerShell DSC for Linux doubled the number of resources available. Initial batch in CTP covered basics: nxUser to create and manage users, nxGroup to define groups and manage group members, nxFile to create and modify files, nxService to start, stop, enable, and disable daemons, and nxScript to cover anything that couldn&#8217;t be done with other resources. We covered these resources in the <a href="/2015/02/21/working-with-powershell-dsc-for-linux-part-2/" target="_blank">previous series</a> and they haven&#8217;t changed much since.
 
 New resources cover installation of packages (nxPackage), injecting single line into existing file (nxFileLine), configuring environment variables (nxEnvironment), working with archived data (nxArchive) and setting up authorized SSH keys (nxSShAuthorizedKeys). In this part of the series we will focus on these newly-added resources.
 
 ### nxPackage
 
-We will start with nxPackage. For me personally that is the most important resource from those added in this release. I created <a href="http://104.131.21.239/2015/02/26/working-with-powershell-dsc-for-linux-part-4/" target="_blank">composite resource for previous version</a> to cover this gap. Unlike my composite resource, the one that shipped covers several package managers. It has support for local installation of packages. You just have to specify _FilePath_ to package file. It understands concepts of package groups. You can specify _Arguments_ for installation and define what is expected _ReturnCode_. I&#8217;m a CentOS user. So, I&#8217;ve tested it with _yum_. It worked fine for any scenarios that I&#8217;ve tried. For very basic scenarios when you specify absolute minimum information, the only required property is the _Name_:
+We will start with nxPackage. For me personally that is the most important resource from those added in this release. I created <a href="/2015/02/26/working-with-powershell-dsc-for-linux-part-4/" target="_blank">composite resource for previous version</a> to cover this gap. Unlike my composite resource, the one that shipped covers several package managers. It has support for local installation of packages. You just have to specify _FilePath_ to package file. It understands concepts of package groups. You can specify _Arguments_ for installation and define what is expected _ReturnCode_. I&#8217;m a CentOS user. So, I&#8217;ve tested it with _yum_. It worked fine for any scenarios that I&#8217;ve tried. For very basic scenarios when you specify absolute minimum information, the only required property is the _Name_:
 
 ```powershell
 Configuration packages {

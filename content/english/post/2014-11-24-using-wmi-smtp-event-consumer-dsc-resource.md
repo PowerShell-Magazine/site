@@ -41,11 +41,9 @@ Here is the configuration script that is used to create an SMTP consumer instanc
 }
 </pre>
 
-Make a note that there is no method to authenticate to the SMTP server. So, if the server you specified in the configuration requires authentication, the consumer action will fail. You can use the method I <a href="http://wp.me/p1KBLb-2Mp" target="_blank">had explained in an earlier post</a> to detect any failures in consumer actions.
+Make a note that there is no method to authenticate to the SMTP server. So, if the server you specified in the configuration requires authentication, the consumer action will fail. You can use the method I <a href="/2014/11/13/troubleshooting-wmi-standard-event-consumer-issues/" target="_blank">had explained in an earlier post</a> to detect any failures in consumer actions.
 
 The following complete configuration script helps us detect a volume change event and then respond to that using the SMTP event consumer by sending out an email to a specified email address.
-
-
 
 
     Configuration BackuptoUFD {

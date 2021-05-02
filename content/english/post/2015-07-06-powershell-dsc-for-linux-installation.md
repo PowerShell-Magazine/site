@@ -14,9 +14,8 @@ categories:
 tags:
   - PowerShell DSC
   - Linux
-
 ---
-First version of PowerShell DSC for Linux is released. We <a href="http://104.131.21.239/2015/05/14/powershell-dsc-for-linux-released/" target="_blank">announced that</a> and promised to come back to that subject. It&#8217;s time to fulfil that promise. In this article, first part of update series, we will focus on new features and bug fixes related to installation.
+First version of PowerShell DSC for Linux is released. We <a href="/2015/05/14/powershell-dsc-for-linux-released/" target="_blank">announced that</a> and promised to come back to that subject. It&#8217;s time to fulfil that promise. In this article, first part of update series, we will focus on new features and bug fixes related to installation.
 
 The first good news is that now both OMI and PowerShell DSC for Linux can be installed on the systems that use _deb_ or _rpm_ packages. This removes requirement of installing development packages previously necessary to compile both products on every node that we want deploy DSC to. Package for OMI can be found at the <a href="https://collaboration.opengroup.org/omi/documents.php?action=show&#038;dcat=&#038;gdid=32721" target="_blank">Open Group page</a> and packages for DSC are distributed in <a href="http://www.microsoft.com/en-us/download/details.aspx?id=46919" target="_blank">MSI file available on Microsoft Download Center</a>. If we do not own any local package repository, we can install these packages using command for local installation, after we manually download the packages to the Linux box.
 
@@ -54,7 +53,7 @@ systemctl start omiservers
 ```
 
 
-I would also suggest to get proper certificate for SSL connections. More details on how to achieve that can be found in one of the <a href="http://104.131.21.239/2015/03/23/omi-with-wsman-over-https-done-right/" target="_blank">previous OMI articles</a> in the PowerShell Magazine.
+I would also suggest to get proper certificate for SSL connections. More details on how to achieve that can be found in one of the <a href="/2015/03/23/omi-with-wsman-over-https-done-right/" target="_blank">previous OMI articles</a> in the PowerShell Magazine.
 
 The difference between installing OMI/DSC using packages is that the path to OMI is different than the one we got by default when we installed OMI from the sources. In the current version of the package _OMI_HOME_ points to _/opt/omi_.
 
@@ -75,7 +74,7 @@ make reg
 ```
 
 
-In either case, the major problem we observed around installation in CTP version was fixed in this release&#8211;ConsistencyInvoker is not only copied to the right location during _make reg_ (you can read about the problem <a href="http://104.131.21.239/2015/02/23/working-with-powershell-dsc-for-linux-part-1/" target="_blank">here</a>), it also works as expected and will fix configuration drift if we decide to do so in Local Configuration Manager setting.
+In either case, the major problem we observed around installation in CTP version was fixed in this release&#8211;ConsistencyInvoker is not only copied to the right location during _make reg_ (you can read about the problem <a href="/2015/02/23/working-with-powershell-dsc-for-linux-part-1/" target="_blank">here</a>), it also works as expected and will fix configuration drift if we decide to do so in Local Configuration Manager setting.
 
 There are a few important changes in the way DSC providers are structured in version 1.0. Previously all Python scripts used by providers were not designed for any specific Python version. That has changed and if we want to make sure any update to Python script works for any version of Python installed on the box, we have to modify 3 scripts per resource. There are three options present:
 

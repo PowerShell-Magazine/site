@@ -4,12 +4,6 @@ author: Shay Levy
 type: post
 date: 2011-09-11T14:11:52+00:00
 url: /2011/09/11/finding-old-files/
-views:
-  - 16365
-tweet_trim_url_2:
-  - http://104.131.21.239/?p=345
-post_views_count:
-  - 1858
 categories:
   - Tips and Tricks
 tags:
@@ -78,6 +72,3 @@ The Aliases member has the LastWriteTime alias defined, meaning that if an incom
 PS> $age = @{Name='Age(Days)';Expression={($_ | New-TimeSpan).Days}}
 PS> Get-ChildItem | Select-Object -Property Name,FullName,$age
 ```
-
-
-<pre class="PowerShellColorizedScript"></pre>

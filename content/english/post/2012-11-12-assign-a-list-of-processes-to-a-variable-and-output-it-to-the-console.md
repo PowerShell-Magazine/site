@@ -12,7 +12,7 @@ tags:
 ---
 Hello everyone! The Brain Teaser series continues.
 
-First, we need to announce the winner of <a href="http://104.131.21.239/2012/11/05/convert-a-string-to-a-character-array-2/" target="_blank">the previous brain teaser</a>. We got a lot of answers, but only three of them fulfilled all requirements ( the answers that use -split operator, the Split() method, or regex return the String objects, not System.Char objects). Bartek, Jaykul, and John Ludlow have had the correct answers.
+First, we need to announce the winner of <a href="/2012/11/05/convert-a-string-to-a-character-array-2/" target="_blank">the previous brain teaser</a>. We got a lot of answers, but only three of them fulfilled all requirements ( the answers that use -split operator, the Split() method, or regex return the String objects, not System.Char objects). Bartek, Jaykul, and John Ludlow have had the correct answers.
 
 And the winner is&#8230; Bartek.
 

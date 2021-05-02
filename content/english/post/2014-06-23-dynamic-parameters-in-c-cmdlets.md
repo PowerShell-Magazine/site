@@ -5,9 +5,11 @@ type: post
 date: 2014-06-23T16:00:39+00:00
 url: /2014/06/23/dynamic-parameters-in-c-cmdlets/
 categories:
-  - Articles
-  - Community
-  - Online Only
+  - PSCmdlet
+  - How To
+tags:
+  - PSCmdlet
+  - How To
 
 ---
 In my [last article][1] I wrote, I covered how to create dynamic parameters in a PowerShell cmdlet. If you haven&#8217;t read that article, please read that one before continuing with this one as I reference it several times in this article. I also encourage you to read [Carlos Perez&#8217;s articles on how to create cmdlets with C#][2].
@@ -55,7 +57,8 @@ The above code works the same way as our previous PowerShell cmdlet. The custome
 
 The best thing about using C# or PowerShell is that the code is &#8216;almost&#8217; good enough to copy and paste from one to the other. You do have to make changes to the declarations and variable names but otherwise it follows the same layout and logic flow. If you compare the above code to our previous base script, you will see that they just about mirror each other.
 
-** Note:** You must compile the Class Library before you can use it. You do this by pressing F7 or use the Build Solution from the Build menu.
+> You must compile the Class Library before you can use it. You do this by pressing F7 or use the Build Solution from the Build menu.
+>
 
 Here is the output from our new C# ELS system which matches our previous PowerShell ELS system:
 
@@ -544,7 +547,7 @@ I hope you have enjoyed this follow up article on dynamic parameters. They are v
 As I mentioned at the beginning of this article, the starter code for this cmdlet is available at <https://github.com/Ben0xA/Get-Order>. There are two branches available in that repository. The master branch is the starter code. The Final-Code branch contains the final Electronic Lemonade Stand C# cmdlet.
 
 [1]: /2014/05/29/dynamic-parameters-in-powershell/
-[2]: http://104.131.21.239/tags/pscmdlet/
+[2]: /tags/pscmdlet/
 [3]: http://msdn.microsoft.com/en-us/library/dd878299(v=vs.85).aspx
 [4]: http://msdn.microsoft.com/library/dd878334(v=vs.85).aspx
 [5]: http://msdn.microsoft.com/en-us/library/system.management.automation.errorrecord%28v=vs.85%29.aspx

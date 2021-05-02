@@ -12,7 +12,7 @@ tags:
 ---
 Hello everyone! The Brain Teaser series continues.
 
-First, we would like to announce the winner of <a href="http://104.131.21.239/2012/11/12/assign-a-list-of-processes-to-a-variable-and-output-it-to-the-console/" target="_blank">the previous brain teaser</a>. We got a few answers in which many of them have a command length of 8. The shortest answer &#8212; ($x=ps), with 7 characters &#8212; was given by Mike F Robbins. So, he is the winner! In his solution, the assignment is placed inside the parenthesis so that the results of &#8220;ps&#8221; (alias to Get-Process) are stored in the variable _$x_ as well as displayed on the console.
+First, we would like to announce the winner of <a href="/2012/11/12/assign-a-list-of-processes-to-a-variable-and-output-it-to-the-console/" target="_blank">the previous brain teaser</a>. We got a few answers in which many of them have a command length of 8. The shortest answer &#8212; ($x=ps), with 7 characters &#8212; was given by Mike F Robbins. So, he is the winner! In his solution, the assignment is placed inside the parenthesis so that the results of &#8220;ps&#8221; (alias to Get-Process) are stored in the variable _$x_ as well as displayed on the console.
 
 Congratulations Mike, you get an eBook version of <a href="http://www.manning.com/jones3/" target="_blank">Learn Windows PowerShell 3 in a Month of Lunches, Second Edition</a> written by <a href="http://donjones.com/" target="_blank">Don Jones</a> and <a href="http://jdhitsolutions.com/blog" target="_blank">Jeffery Hicks</a>.
 

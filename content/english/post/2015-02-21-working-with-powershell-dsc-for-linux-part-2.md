@@ -16,9 +16,8 @@ tags:
   - PowerShell DSC
   - Linux
   - OMI
-
 ---
-In the <a href="http://104.131.21.239/?p=11173" target="_blank">first part</a> of this series, we covered the basis&#8211;how to get Desired State Configuration to do what the name promises: keep desired state consistent. Now that we are sure we will get the expected behavior it&#8217;s time to look into the resources offered in the CTP version of PowerShell DSC for Linux.
+In the <a href="/2015/02/23/working-with-powershell-dsc-for-linux-part-1/" target="_blank">first part</a> of this series, we covered the basis&#8211;how to get Desired State Configuration to do what the name promises: keep desired state consistent. Now that we are sure we will get the expected behavior it&#8217;s time to look into the resources offered in the CTP version of PowerShell DSC for Linux.
 
 The real work (getting, testing and setting system state) in PowerShell DSC for Linux is performed by Python scripts called from C++ based MI providers, with one script per each of the resources. All of these scripts can be found in _$OMI_HOME/lib/Scripts_. Each script defines three main functions (in the similar fashion PowerShell resources do): _Get_Marshall_, _Test_Marshall_ and _Set_Marshall_ plus number of helper functions that &#8220;get the job done&#8221;. Parameters of main functions reflect the schema defined in the MOF document. Because of that design, it&#8217;s not difficult to understand how each of the resources work (as long as you can read Python).
 

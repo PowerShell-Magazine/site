@@ -10,7 +10,6 @@ categories:
 tags:
   - How To
   - Service Management Automation
-
 ---
 Hey Readers.  In this article, I wanted to take the opportunity to talk about a scenario that may be “edge case” but a case just the same within the constructs of leveraging switch parameters in PowerShell workflow.  In fact, this scenario becomes less of an edge case as you start to write SMA Runbooks that leverage nested Runbooks.  Still don’t know what SMA is and want more information?  Check out the series <http://aka.ms/IntroToSMA> and my first article for PowerShell Magazine [here](/2013/12/11/be-smart-with-windows-azure-pack-and-sma/) for more information.
 
@@ -127,4 +126,4 @@ Happy Automating!
 
 [1]: http://blogs.technet.com/b/privatecloud/archive/2013/10/23/automation-service-management-automation-sma-runbook-toolkit-spotlight-smart-for-runbook-import-and-export.aspx
 [2]: http://aka.ms/BuildingClouds
-[3]: http://104.131.21.239/author/aleksandar/
+[3]: author/aleksandar-nikolic

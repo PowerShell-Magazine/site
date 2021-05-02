@@ -4,10 +4,6 @@ author: PowerShellMagazine
 type: post
 date: 2011-10-31T13:46:28+00:00
 url: /2011/10/31/an-interview-with-powershell-expert-tobias-weltner/
-views:
-  - 4816
-post_views_count:
-  - 1094
 categories:
   - Interviews
 tags:
@@ -32,6 +28,6 @@ The PowerShell Experts [video series][3] continues with the interview with Tob
 
 [1]: http://theexpertsconference.com/
 [2]: http://powershellers.blogspot.com
-[3]: http://104.131.21.239/category/columns/interviews/video/
+[3]: /categories/interviews/
 [4]: http://www.PowerShell.com
 [5]: http://www.PowerShellCommunity.org

@@ -8,7 +8,6 @@ categories:
   - Tips and Tricks
 tags:
   - Tips and Tricks
-
 ---
 **Note**: This tip requires PowerShell 2.0 or above.
 
@@ -46,7 +45,7 @@ TargetObject          Property       System.Object TargetObject {get;}
 PSMessageDetails      ScriptProperty System.Object PSMessageDetails {get=& { Set-StrictMode -Version 1; $this.Except...
 ```
 
-This approach doesn&#8217;t work either, because you are getting information about the error objects (_System.Management.Automation.ErrorRecord_ type) contained in the _$error_ variable, not the members of the _$error_ itself. Do you remember our previous tip <a href="http://104.131.21.239/2012/12/11/pstip-getting-information-about-a-collection-object-not-its-elements/" target="_blank">#PSTip Getting information about a collection object, not its elements</a>? Yes, you need to use _-InputObject_ parameter. You can easily spot the _Clear()_ method now:
+This approach doesn&#8217;t work either, because you are getting information about the error objects (_System.Management.Automation.ErrorRecord_ type) contained in the _$error_ variable, not the members of the _$error_ itself. Do you remember our previous tip <a href="/2012/12/11/pstip-getting-information-about-a-collection-object-not-its-elements/" target="_blank">#PSTip Getting information about a collection object, not its elements</a>? Yes, you need to use _-InputObject_ parameter. You can easily spot the _Clear()_ method now:
 
 ```
 PS> Get-Member -InputObject $error

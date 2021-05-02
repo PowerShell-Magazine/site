@@ -14,7 +14,6 @@ categories:
 tags:
   - Modules
   - Royal TS
-
 ---
 Back in January 2015, I wrote an [introduction][1] to the new PowerShell module in Royal TS V3, which back then was available as a beta version.
 
@@ -63,8 +62,8 @@ I have also updated the script for creating Remote Desktop connections I publish
 
 If you have ideas or suggestions for improvements, you may submit them on the [Royal TS Support portal][5].
 
-[1]: http://104.131.21.239/2015/01/08/introducing-the-royal-ts-powershell-module/
+[1]: /2015/01/08/introducing-the-royal-ts-powershell-module/
 [2]: http://www.royalapplications.com/ts/win/download
-[3]: http://104.131.21.239/2015/01/08/introducing-the-royal-ts-powershell-module/#comments
+[3]: /2015/01/08/introducing-the-royal-ts-powershell-module/#comments
 [4]: https://github.com/janegilring/PSCommunity/blob/master/Royal%20TS/Update-RoyalFolder.ps1
 [5]: http://support.royalapplications.com/forums/242213-royal-ts-for-windows

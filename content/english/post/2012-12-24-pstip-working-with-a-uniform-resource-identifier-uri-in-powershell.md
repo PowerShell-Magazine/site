@@ -15,7 +15,7 @@ tags:
 PowerShell offers a powerful method of working with URIs by leveraging the System.Uri .NET class which offers many properties and methods that provide a way to easily manipulate and compare URIs. This class can be utilized by using the _[System.Uri]_ notation in PowerShell. You can get the full list of properties and methods by using the following command:
 
 ```
-PS> [System.Uri]'http://104.131.21.239' | Get-Member
+PS> [System.Uri]'https://powershellmagazine.com' | Get-Member
 ```
 
 

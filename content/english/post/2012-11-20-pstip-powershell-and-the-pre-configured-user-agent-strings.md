@@ -8,7 +8,6 @@ categories:
   - Tips and Tricks
 tags:
   - Tips and Tricks
-
 ---
 **Note**: This tip requires PowerShell 3.0 or above.
 
@@ -28,6 +27,6 @@ Safari           Mozilla/5.0 (Windows NT; Windows NT 6.1; en-US) AppleWebKit/533
 
 We can use it like in the following command:
 
-<pre class="brush: powershell; title: ; notranslate" title="">PS&gt; $userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
-PS&gt; Invoke-WebRequest http://104.131.21.239 -UserAgent $userAgent
+<pre class="brush: powershell; title: ; notranslate" title="">PS> $userAgent = [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome
+PS> Invoke-WebRequest https://powershellmagazine.com -UserAgent $userAgent
 </pre>

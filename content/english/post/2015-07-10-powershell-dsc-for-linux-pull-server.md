@@ -14,7 +14,6 @@ categories:
 tags:
   - PowerShell DSC
   - Linux
-
 ---
 Initial release of PowerShell DSC for Linux had one big gap: it supported only pushing the configuration to the node. And even though this mode is good enough for demos or basic proof of concept, it doesn&#8217;t seem like a proper solution for production environment. The first official version of PowerShell DSC for Linux supports both modes of configuration delivery&#8211;Push and Pull. In this part of the series, we will take a look at setting up Linux to pull configuration from single and multiple pull servers.
 
@@ -108,11 +107,11 @@ Invoke-SSHCommand -Command '/opt/omi/bin/ConsistencyInvoker'
 Invoke-SSHCommand -Command 'cat /tmp/pull'
 ```
 
-**Note**: I have used <a href="https://github.com/darkoperator/Posh-SSH" target="_blank">Posh-SSH</a> module to copy files/invoke commands, you can read more about it <a href="http://104.131.21.239/2014/07/03/posh-ssh-open-source-ssh-powershell-module/" target="_blank">here</a>.
+**Note**: I have used <a href="https://github.com/darkoperator/Posh-SSH" target="_blank">Posh-SSH</a> module to copy files/invoke commands, you can read more about it <a href="/2014/07/03/posh-ssh-open-source-ssh-powershell-module/" target="_blank">here</a>.
 
 If our certificate was added to ca-trust we should be able to see content of our _hello world_ file. If that didn&#8217;t help reading logs and observing behavior of omiserver run interactively may give us clues why it still fails.
 
-I&#8217;ve mentioned using more than one Pull server few times already. There is very good reason for that: PowerShell DSC for Linux not only supports Pull server, it also supports partial configurations. You can read more about partial configurations in one of the previous <a href="http://104.131.21.239/2014/10/02/partial-dsc-configurations-in-windows-management-framework-wmf-5-0/" target="_blank">articles written by Ravi</a>. Long story short: partial configurations enable scenarios where separation of roles and taking pieces of configuration from different Pull servers (potentially owned by different teams) is necessary. The way partial configuration work evolves: when I tried to apply patterns from Ravi&#8217;s post with current version it failed. The procedure I had to follow:
+I&#8217;ve mentioned using more than one Pull server few times already. There is very good reason for that: PowerShell DSC for Linux not only supports Pull server, it also supports partial configurations. You can read more about partial configurations in one of the previous <a href="/2014/10/02/partial-dsc-configurations-in-windows-management-framework-wmf-5-0/" target="_blank">articles written by Ravi</a>. Long story short: partial configurations enable scenarios where separation of roles and taking pieces of configuration from different Pull servers (potentially owned by different teams) is necessary. The way partial configuration work evolves: when I tried to apply patterns from Ravi&#8217;s post with current version it failed. The procedure I had to follow:
 
   * create configuration that contains two Pull servers and two partial configurations
 ```powershell

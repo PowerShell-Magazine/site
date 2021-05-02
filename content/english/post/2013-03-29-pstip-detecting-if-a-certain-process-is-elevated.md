@@ -39,7 +39,7 @@ Format-Table Name,Elevated
 
 Here we filter on all processes except the “Idle” and “System” processes and we check if we see the Path and Handle properties and finally use the Add-Member cmdlet to add a custom property (Name) to an instance of the Windows PowerShell object.
 
-**<a href="http://104.131.21.239/wp-content/uploads/2013/03/image004.jpg" rel="lightbox[6130]"><img alt="image004" src="http://104.131.21.239/wp-content/uploads/2013/03/image004.jpg" width="624" height="148" /></a>**
+![](/images/image004.jpg)
 
 [1]: http://technet.microsoft.com/en-us/sysinternals/bb664922.aspx
 [2]: https://twitter.com/poshoholic

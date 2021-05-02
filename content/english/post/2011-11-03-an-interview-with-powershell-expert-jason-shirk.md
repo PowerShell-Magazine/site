@@ -3,11 +3,7 @@ title: An interview with PowerShell expert Jason Shirk
 author: PowerShellMagazine
 type: post
 date: 2011-11-03T12:52:00+00:00
-featured_image: /wp-content/uploads/2011/10/interview.png
-views:
-  - 16132
-post_views_count:
-  - 1566
+url: /2011/11/03/an-interview-with-powershell-expert-jason-shirk/
 categories:
   - Interviews
 tags:
@@ -32,4 +28,4 @@ The PowerShell Experts [video series][3] continues with the interview with Jas
 
 [1]: http://theexpertsconference.com/
 [2]: http://powershellers.blogspot.com
-[3]: http://104.131.21.239/category/columns/interviews/video/
+[3]: /categories/interviews

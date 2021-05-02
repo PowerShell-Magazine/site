@@ -12,7 +12,6 @@ categories:
   - Tips and Tricks
 tags:
   - Tips and Tricks
-
 ---
 Using the Microsoft.Win32.Registry class it is possible to access both&#8211;the local registry and, more importantly, the registry of a remote system. Using the PowerShell cmdlet this is unfortunately not possible. Ravikanth posted a similar [tip][1] in PowerShell Magazine in which he uses it to retrieve SQL instance names using remote registry.
 
@@ -36,5 +35,5 @@ For more information about this class and the available methods please refer to 
 
 [RegistryKey Class][2]
 
-[1]: http://104.131.21.239/2013/08/06/pstip-retrieve-all-sql-instance-names-on-local-and-remote-computers/
+[1]: /2013/08/06/pstip-retrieve-all-sql-instance-names-on-local-and-remote-computers/
 [2]: https://msdn.microsoft.com/en-us/library/microsoft.win32.registrykey

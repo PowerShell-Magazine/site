@@ -14,7 +14,6 @@ categories:
 tags:
   - Linux
   - OMI
-
 ---
 When you install OMI for the first time, a pair of keys is generated for you. When an automated process is used, the only option that will &#8220;just work&#8221; is to generate self-signed certificate. The logical next step is to convince your machine that it should connect to OMI server even though it doesn't really trust this certificate. Therefore most of examples that use CIM connection to OMI server you will find will look like this:
 
@@ -40,7 +39,7 @@ Good for very basic demos but if you consider using OMI and/or Linux DSC in the 
 
 If you have internal PKI, it&#8217;s relatively straight-forward to create proper, domain-wide trusted certificate for any network device. Existence of the internal PKI should be a safe assumption: any organization that uses SSL and doesn't have own PKI is either wasting money on 3rd-party certificates or is &#8220;doing it wrong&#8221; for any SSL-based application.
 
-First thing we have to do is to generate certificate request and private key on Linux machine. To achieve this we will use _openssl_ command. To avoid prompts we will provide all parameters inline. To call commands on Linux we will use Posh-SSH module, described <a href="http://104.131.21.239/2014/07/03/posh-ssh-open-source-ssh-powershell-module/" target="_blank">here</a>:
+First thing we have to do is to generate certificate request and private key on Linux machine. To achieve this we will use _openssl_ command. To avoid prompts we will provide all parameters inline. To call commands on Linux we will use Posh-SSH module, described <a href="/2014/07/03/posh-ssh-open-source-ssh-powershell-module/" target="_blank">here</a>:
 
 ```powershell
 $ssh = New-SSHSession -ComputerName DSCTest.bielawscy.com -AcceptKey $true -Credential $root

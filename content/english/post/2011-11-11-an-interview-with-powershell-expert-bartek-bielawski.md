@@ -4,10 +4,6 @@ author: PowerShellMagazine
 type: post
 date: 2011-11-11T16:07:25+00:00
 url: /2011/11/11/an-interview-with-powershell-expert-bartek-bielawski/
-views:
-  - 4364
-post_views_count:
-  - 1187
 categories:
   - Interviews
 tags:
@@ -32,5 +28,5 @@ The PowerShell Experts [video series][3] continues with the interview with [Ba
 
 [1]: http://theexpertsconference.com/
 [2]: http://powershellers.blogspot.com
-[3]: http://104.131.21.239/category/columns/interviews/video/
+[3]: /categories/interviews
 [4]: http://becomelotr.wordpress.com/about/

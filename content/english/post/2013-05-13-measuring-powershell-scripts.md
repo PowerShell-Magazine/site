@@ -8,13 +8,12 @@ categories:
   - How To
 tags:
   - How To
-
 ---
-Earlier this year, Microsoft released <a href="http://104.131.21.239/2013/03/20/the-windows-powershell-3-0-sdk-sample-pack" target="_blank">the Windows PowerShell 3.0 SDK Sample Pack</a> which includes a lot of code samples that show how to build applications based on Windows PowerShell 3.0. If you browsed through the samples, you probably noticed that all samples are written in C# and require Visual Studio 2010 to build and compile the samples. That&#8217;s all good for developers, but what about IT Pros?
+Earlier this year, Microsoft released <a href="/the-windows-powershell-3-0-sdk-sample-pack" target="_blank">the Windows PowerShell 3.0 SDK Sample Pack</a> which includes a lot of code samples that show how to build applications based on Windows PowerShell 3.0. If you browsed through the samples, you probably noticed that all samples are written in C# and require Visual Studio 2010 to build and compile the samples. That&#8217;s all good for developers, but what about IT Pros?
 
 One of the samples, <a href="http://code.msdn.microsoft.com/Script-Line-Profiler-Sample-80380291" target="_blank">the Script Line Profiler Sample</a>, shows how to create a script line profiler using the new Windows PowerShell 3.0 Abstract Syntax Tree (AST) support. Out-of-the-box, PowerShell offers two Measure cmdlets: _Measure-Command_ and _Measure-Object_. The former allows you to measure the time it takes to run script blocks and cmdlets and the latter enables us to calculate the numeric properties of objects, and more.
 
-The Script Line Profiler Sample provides an additional measuring cmdlet, the _Measure-Script_ cmdlet. With _Measure-Script_ we can measure the execution time of each script statement (line). We can identify code bottlenecks and pin point parts of code that take longer to execute than expected. That&#8217;s surely a cmdlet you&#8217;d want to have in your utility belt!
+The Script Line Profiler Sample provides an additional measuring cmdlet, the _Measure-Script_ cmdlet. With _Measure-Script_ we can measure the execution time of each script statement (line). We can identify code bottlenecks and pin point parts of code that take longer to execute than expected. That's surely a cmdlet you&#8217;d want to have in your utility belt!
 
 Anyway, as stated above, there is just one MAJOR <a href="http://www.urbandictionary.com/define.php?term=pita%20%28pain%20in%20the%20ass%29" target="_blank">PITA</a> &#8211; it requires Visual Studio! In this article, I want to show a way to compile the project without having to install VS, just by using cmdlets available in PowerShell 3.0. First, let&#8217;s browse the sample files. You can do that by clicking on the <a href="http://code.msdn.microsoft.com/Script-Line-Profiler-Sample-80380291/view/SourceCode#content" target="_blank">Browse Code tab</a>.
 

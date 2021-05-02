@@ -12,7 +12,6 @@ categories:
   - PowerShell DSC
 tags:
   - PowerShell DSC
-
 ---
 By now, it should be no surprise that WMF 5.0 Preview added support for defining classes and user-defined data types. This is done using the formal syntax and semantics that you find in an object-oriented programming language. As per the September 2014 Preview release notes, the following are the supported scenarios:
 
@@ -44,7 +43,7 @@ class DSCDemo {
 }
 ```
 
-<a href="http://104.131.21.239/wp-content/uploads/2014/10/12.png" rel="lightbox[10554]"><img class="aligncenter size-full wp-image-10560" src="http://104.131.21.239/wp-content/uploads/2014/10/12.png" alt="1" width="534" height="215" srcset="http://www.powershellmagazine.com/wp-content/uploads/2014/10/12.png 534w, http://www.powershellmagazine.com/wp-content/uploads/2014/10/12-300x120.png 300w" sizes="(max-width: 534px) 100vw, 534px" /></a>
+![](/images/dsc12.png)
 
 The second keyword is _Enum_. Using this, we can define new enumerations.
 
@@ -54,7 +53,7 @@ The second keyword is _Enum_. Using this, we can define new enumerations.
    Unknown = 10
 }
 </pre>
-<a href="http://104.131.21.239/wp-content/uploads/2014/10/21.png" rel="lightbox[10554]"><img class="aligncenter size-full wp-image-10563" src="http://104.131.21.239/wp-content/uploads/2014/10/21.png" alt="2" width="134" height="119" /></a>
+![](/images/dsc21.png)
 
 The other language extensions for DSC resources include three attributes for defining resource properties.
 

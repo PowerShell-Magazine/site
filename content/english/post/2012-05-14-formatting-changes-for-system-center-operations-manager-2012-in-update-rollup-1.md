@@ -4,10 +4,6 @@ author: Stefan Stranger
 type: post
 date: 2012-05-14T18:00:18+00:00
 url: /2012/05/14/formatting-changes-for-system-center-operations-manager-2012-in-update-rollup-1/
-views:
-  - 12793
-post_views_count:
-  - 2529
 categories:
   - How To
   - System Center
@@ -22,7 +18,7 @@ And because I&#8217;m a [Premier Field Engineer at Microsoft][1] specialized in 
 
 When looking at the [Description of Update Rollup 1 for System Center 2012][4] I found the following:
 
-<img class="alignnone size-full wp-image-2432" title="scom2012_01" src="http://104.131.21.239/wp-content/uploads/2012/05/scom2012_01.png" alt="" width="538" height="148" srcset="http://www.powershellmagazine.com/wp-content/uploads/2012/05/scom2012_01.png 538w, http://www.powershellmagazine.com/wp-content/uploads/2012/05/scom2012_01-300x82.png 300w" sizes="(max-width: 538px) 100vw, 538px" />
+![](/images/scom2012_01.png)
 
 Yes! There I found the formatting changes James and I worked on during my week at TechReady. But let&#8217;s explain first some basic information about PowerShell formatting. We start using our beloved Get-Help cmdlet.
 

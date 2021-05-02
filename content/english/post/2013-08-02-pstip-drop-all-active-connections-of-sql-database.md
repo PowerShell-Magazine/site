@@ -10,7 +10,6 @@ categories:
 tags:
   - Tips and Tricks
   - SQL
-
 ---
 **Note**: This tip requires PowerShell 2.0 or above.
 
@@ -25,6 +24,6 @@ $smo.KillAllProcesses('MyDB')
 
 This code snippet will help you drop all active database connections of a given SQL database.
 
-[1]: http://104.131.21.239/2013/07/31/pstip-get-active-database-connections-of-a-sql-database
+[1]: /2013/07/31/pstip-get-active-database-connections-of-a-sql-database
 [2]: http://msdn.microsoft.com/en-us/library/microsoft.sqlserver.management.smo.server.killallprocesses.aspx
 [3]: http://msdn.microsoft.com/en-us/library/microsoft.sqlserver.management.smo.server.aspx

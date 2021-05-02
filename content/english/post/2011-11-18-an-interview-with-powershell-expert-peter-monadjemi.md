@@ -4,8 +4,6 @@ author: PowerShellMagazine
 type: post
 date: 2011-11-18T08:08:16+00:00
 url: /2011/11/18/an-interview-with-powershell-expert-peter-monadjemi/
-post_views_count:
-  - 1117
 categories:
   - Interviews
 tags:
@@ -30,5 +28,5 @@ The PowerShell Experts [video series][3] concludes with the interview with [Pe
 
 [1]: http://theexpertsconference.com/
 [2]: http://powershellers.blogspot.com
-[3]: http://104.131.21.239/category/columns/interviews/video/
+[3]: /categories/interviews
 [4]: http://www.activetraining.de/

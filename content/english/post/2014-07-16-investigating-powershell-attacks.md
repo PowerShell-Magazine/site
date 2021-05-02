@@ -5,18 +5,17 @@ type: post
 date: 2014-07-16T16:00:13+00:00
 url: /2014/07/16/investigating-powershell-attacks/
 categories:
-  - infosec
-  - security
+  - Infosec
+  - Security
 tags:
-  - infosec
-  - security
-
+  - Infosec
+  - Security
 ---
 “Huh, that’s weird. Look at this system. I think the attacker used PowerShell.” It was late summer 2012, and we were working on an incident response investigation for a Fortune 100 technology company compromised by an intruder attempting to steal intellectual property. The evidence wasn’t terribly exciting: just a simple reconnaissance script to enumerate domain users and systems. But it was an anomaly &#8211; or at least, a rare occurrence within the scope of our previous case work. We conduct hundreds of incident response investigations every year, most of which involve targeted attacks for the purposes of espionage, stealing intellectual property, or theft of financial data. Attacker tools, tactics, and procedures regularly change and evolve &#8211; and PowerShell was a new wrinkle.
 
 Fast forward almost two years later. Stories of PowerShell usage in both targeted compromises and opportunistic malware are hitting infosec media with alarming frequency. We also see these trends in our daily casework: an increasing number of investigations involve attacker reconnaissance, command execution, or data theft facilitated by PowerShell. Just a few months ago, we responded to a case where the attacker evolved from relying on custom tools and PsExec, to exclusive use of PowerShell remoting, for lateral movement and command-and-control (and thereby evaded detection for many months). The gap between attackers’ PowerShell skills, and organizations’ ability to detect and respond to its misuse, is growing.
 
-Prior articles by <a href="http://104.131.21.239/2014/07/08/powersploit/" target="_blank">Matthew Graeber</a>, <a href="http://104.131.21.239/2014/07/09/owning-networks-and-evading-incident-response-with-powershell/" target="_blank">Joseph Bialek</a>, and <a href="http://104.131.21.239/2014/07/14/veil-powerview/" target="_blank">Will Schroeder</a> did a great job of explaining why PowerShell is so dangerous in the hands of an attacker &#8211; particularly given elevated privileges during the post-exploitation phase of an incident. It provides:
+Prior articles by <a href="/2014/07/08/powersploit/" target="_blank">Matthew Graeber</a>, <a href="/2014/07/09/owning-networks-and-evading-incident-response-with-powershell/" target="_blank">Joseph Bialek</a>, and <a href="/2014/07/14/veil-powerview/" target="_blank">Will Schroeder</a> did a great job of explaining why PowerShell is so dangerous in the hands of an attacker &#8211; particularly given elevated privileges during the post-exploitation phase of an incident. It provides:
 
   * A built-in mechanism for remote command execution
   * The ability to execute malicious code without ever touching disk
@@ -50,27 +49,21 @@ Once complete, administrators can rely on centralized Windows event log forwardi
 In the interest of providing recommendations applicable to all versions of PowerShell, inclusive of 2.0, we recommend evaluating the following log sources and events:
 
   * Windows PowerShell event log entries indicating the start and stop of PowerShell activity:
-○ Event ID 400 (“Engine state is changed from None to Available”), upon the start of any local or remote PowerShell activity.
-
-○ Event ID 600 referencing “WSMan” (e.g. “Provider WSMan Is Started”), indicating the onset of PowerShell remoting activity on both source and destination systems.
-
-○ Event ID 403 (“Engine state is changed from Available to Stopped”), upon the end of the PowerShell activity.
+    * Event ID 400 (“Engine state is changed from None to Available”), upon the start of any local or remote PowerShell activity.
+    * Event ID 600 referencing “WSMan” (e.g. “Provider WSMan Is Started”), indicating the onset of PowerShell remoting activity on both source and destination systems.
+    * Event ID 403 (“Engine state is changed from Available to Stopped”), upon the end of the PowerShell activity.
 
   * System event log entries indicating a configuration change to the Windows Remote Management service:
-○ Event ID 7040 “The start type of the Windows Remote Management (WS-Management) service was changed from [disabled / demand start] to auto start.” &#8211; recorded when PowerShell remoting is enabled.
+    * Event ID 7040 “The start type of the Windows Remote Management (WS-Management) service was changed from [disabled / demand start] to auto start.” &#8211; recorded when PowerShell remoting is enabled.
+    * Event ID 10148 (“The WinRM service is listening for WS-Management requests”) &#8211; recorded upon reboot on systems where remoting has been enabled.
 
-○ Event ID 10148 (“The WinRM service is listening for WS-Management requests”) &#8211; recorded upon reboot on systems where remoting has been enabled.
-
-  * WinRM Operational event log entries indicating authentication prior to PowerShell remoting on an accessed system: 
-○ Event ID 169 (“User [DOMAIN\Account] authenticated successfully using [authentication_protocol]”)
-
+  * WinRM Operational event log entries indicating authentication prior to PowerShell remoting on an accessed system:
+    * Event ID 169 (“User [DOMAIN\Account] authenticated successfully using [authentication_protocol]”)
   * Security event log entries indicating the execution of the PowerShell console or interpreter:
-○ Event ID 4688 (“A new process has been created”) &#8211; includes account name, domain, and executable name in the event message.
-
+    * Event ID 4688 (“A new process has been created”) &#8211; includes account name, domain, and executable name in the event message.
   * AppLocker event log entries recording the local execution of PowerShell scripts. We recommend enabling AppLocker in audit mode across an environment for this specific purpose. Upon script execution in audit mode, the AppLocker MSI and Script Event Log may record:
-○ Event ID 8006 (“[script_path] was allowed to run but would have been prevented from running if the AppLocker policy were enforced”)
-
-○ Event ID 8005 (“[script_path] was allowed to run”).</ul> 
+    * Event ID 8006 (“[script_path] was allowed to run but would have been prevented from running if the AppLocker policy were enforced”)
+    * Event ID 8005 (“[script_path] was allowed to run”).
 
 Both of these events will include the user account that attempted to execute a script.
 

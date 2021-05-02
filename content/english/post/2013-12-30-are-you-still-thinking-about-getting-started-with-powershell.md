@@ -8,7 +8,6 @@ categories:
   - Learning PowerShell
 tags:
   - Learning PowerShell
-
 ---
 At present, Windows PowerShell is in version 4.0. It came a long way since its initial release back in 2006. It is today called  a distributed automation engine, command-line shell, and scripting language. I started looking at PowerShell in the &#8220;Monad&#8221; days&#8211;that is during the beta release of Windows Server 2008. It looked like an alien language to me in the beginning. I was very comfortable dealing with VBScripts and JScripts in those days and never wanted a different scripting language. But, PowerShell&#8217;s introduced a complete paradigm shift. For me, it changed the way I looked at automation. It gave me seamless access to .NET and Win32 native APIs. As the product matured, features such as remoting, jobs, workflows and desired state configuration increased the adoption.
 
@@ -22,10 +21,10 @@ As you see here, the interest in Windows PowerShell has been rapidly growing sin
 
 If you are an IT administrator, I suggest that you employ PowerShell for IT automation in your organization. I wouldn&#8217;t say that PowerShell is critical for retaining your job but it is critical for progressing in your career.
 
-<span style="line-height: 1.5em;">Are you still procrastinating about learning PowerShell? If you have just started learning Powershell, <a href="http://104.131.21.239/2013/07/15/preparing-for-a-powershell-interview/">this article</a> might help you focus on what you need to learn.</span>
+<span style="line-height: 1.5em;">Are you still procrastinating about learning PowerShell? If you have just started learning Powershell, <a href="/2013/07/15/preparing-for-a-powershell-interview/">this article</a> might help you focus on what you need to learn.</span>
 
 [1]: http://www.jsnover.com/blog/2011/10/01/monad-manifesto/
 [2]: http://www.microsoft.com/cec/en/us/cec-overview.aspx#man-windows
 [3]: http://www.opengroup.org/software/omi
 [4]: http://mvp.microsoft.com/en-us/search-mvp.aspx?ty=a&ex=PowerShell
-[5]: /featured-authors/
+[5]: /author/

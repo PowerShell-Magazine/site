@@ -8,9 +8,8 @@ categories:
   - Tips and Tricks
 tags:
   - Tips and Tricks
-
 ---
-<span style="line-height: 1.5em;">If you have read my earlier post on the Hyper-V </span><a style="line-height: 1.5em;" href="http://104.131.21.239/2013/12/17/pstip-copying-folders-using-copy-vmfile-cmdlet-in-windows-server-2012-r2-hyper-v/"><em>Copy-VMFile</em></a> <span style="line-height: 1.5em;">cmdlet, I was checking for the version of integration components (IC) installed in the virtual machines. I wanted to verify if the IC version is at a minimum supported level or not. If you look at any version number, it usually has four different parts &#8211; major, minor, build, and release numbers.</span>
+<span style="line-height: 1.5em;">If you have read my earlier post on the Hyper-V </span><a style="line-height: 1.5em;" href="/2013/12/17/pstip-copying-folders-using-copy-vmfile-cmdlet-in-windows-server-2012-r2-hyper-v/"><em>Copy-VMFile</em></a> <span style="line-height: 1.5em;">cmdlet, I was checking for the version of integration components (IC) installed in the virtual machines. I wanted to verify if the IC version is at a minimum supported level or not. If you look at any version number, it usually has four different parts &#8211; major, minor, build, and release numbers.</span>
 
 The traditional way of checking for version numbers is to verify if all four version numbers match or not. This can sometimes be complex and error prone. A more easy and efficient way to do that is using [System.Version][1] .NET class. This is available as [Version] type accelerator in PowerShell.
 

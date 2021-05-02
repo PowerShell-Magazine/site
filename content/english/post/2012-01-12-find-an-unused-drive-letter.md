@@ -3,11 +3,6 @@ title: Find an unused drive letter
 author: Shay Levy
 type: post
 date: 2012-01-12T19:00:15+00:00
-url: /2012/01/12/find-an-unused-drive-letter/
-views:
-  - 84715
-post_views_count:
-  - 5593
 categories:
   - Brainteaser
 tags:
@@ -17,8 +12,6 @@ tags:
 ### Problem
 
 Your task is to write the shortest code to find one of the unused drive letters (excluding a,b and c). PowerShell&#8217;s default aliases are allowed. You have one week.  Answers should be posted as a comment to this brain teaser. That&#8217;s it.
-
-[<img class="alignnone size-full wp-image-1823" style="margin: 6px; display: inline; float: left;" title="PowerCLIBook" src="http://104.131.21.239/wp-content/uploads/2011/12/PowerCLIBook.jpg" alt="" width="80" height="99" />][1]
 
 The winner gets a copy of  the &#8220;[VMware vSphere PowerCLI Reference][2]&#8221; from [Sybex][3]!
 

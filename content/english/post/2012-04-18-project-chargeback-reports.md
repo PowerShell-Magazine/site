@@ -4,10 +4,6 @@ author: Luc Dekens
 type: post
 date: 2012-04-18T18:00:50+00:00
 url: /2012/04/18/project-chargeback-reports/
-views:
-  - 7989
-post_views_count:
-  - 1347
 categories:
   - PowerCLI
   - VMware
@@ -88,12 +84,10 @@ And as always, there is no single, correct script when using PowerShell. Feel  
 
 Happy scripting !
 
-&nbsp;
-
 [1]: http://communities.vmware.com/community/vmtn/server/vsphere/automationtools/powercli?view=overview
 [2]: http://www.vmware.com/support/developer/PowerCLI/PowerCLI50/html/Get-Stat.html
 [3]: http://www.quest.com/powershell/activeroles-server.aspx
-[4]: http://104.131.21.239/wp-content/scripts/ProjectChargebackReports.zip
+[4]: /downloadsProjectChargebackReports.zip
 [5]: http://archive.msdn.microsoft.com/PowerShellPack
 [6]: http://archive.msdn.microsoft.com/PowerShellPack/Thread/View.aspx?ThreadId=3524
 [7]: http://msdn.microsoft.com/en-us/library/aa383614%28v=VS.85%29.aspx

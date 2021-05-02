@@ -12,7 +12,6 @@ categories:
   - How to
 tags:
   - How to
-
 ---
 In the article [Decoding PowerShell build numbers][1], I stated the need to have some form of reference to what the various PowerShell build numbers means:
 
@@ -73,8 +72,8 @@ There are a lot more features planned for this module, so check out the [Git rep
 
 Although using PowerShell remoting for ad-hoc checking between two systems might be the most common scenario for using Compare-PSVersionCommand, the use of XML files should not be underestimated. If the community contributes with files to the PSCommandData folder in the Git-repository, over time we can gather a lot of information about commands in the different PowerShell versions making it easy to do comparisons without access to a system running a specific version.
 
-[1]: http://104.131.21.239/2016/03/10/decoding-powershell-build-numbers/
-[2]: http://104.131.21.239/2011/09/15/how-to-find-out-whats-new-in-powershell-vnext/
+[1]: /2016/03/10/decoding-powershell-build-numbers/
+[2]: /2011/09/15/how-to-find-out-whats-new-in-powershell-vnext/
 [3]: https://github.com/janegilring/PSVersionCompare
 [4]: https://raw.githubusercontent.com/janegilring/PSVersionCompare/master/Output/txt/WS2016TP4_PSVersion_5.0.10586.0-WS2016TP5_PSVersion_5.1.14300.1000.txt
 [5]: https://raw.githubusercontent.com/janegilring/PSVersionCompare/master/Output/txt/WS2016TP4_Nano_Server_Compute_5.0.10586.0-WS2016TP5_Nano_Server_Compute_5.1.14300.1000.txt

@@ -42,5 +42,5 @@ So, now, we can use these commands the same way we used _New-Item_ cmdlet.
 <pre class="brush: powershell; title: ; notranslate" title="">PS&gt; md ".\FolderX\FolderY\FolderZ"
 </pre>
 
-[1]: http://104.131.21.239/2012/11/22/pstip-create-a-file-of-the-specified-size/
+[1]: /2012/11/22/pstip-create-a-file-of-the-specified-size/
 [2]: http://technet.microsoft.com/library/hh849795.aspx

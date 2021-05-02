@@ -4,10 +4,6 @@ author: PowerShellMagazine
 type: post
 date: 2011-11-15T05:56:24+00:00
 url: /2011/11/15/an-interview-with-powershell-expert-craig-martin/
-views:
-  - 4617
-post_views_count:
-  - 1044
 categories:
   - Interviews
 tags:
@@ -31,5 +27,5 @@ The PowerShell Experts [video series][3] continues with the interview with [Cr
 
 [1]: http://theexpertsconference.com/
 [2]: http://powershellers.blogspot.com
-[3]: http://104.131.21.239/category/columns/interviews/video/
+[3]: /categories/interviews
 [4]: http://www.identitytrench.com
