@@ -1,0 +1,53 @@
+# Publishes a blog post when a pull request is merged.
+
+name: Publish Blog Post
+
+# Controls when the action will run. Triggers the workflow on closing a pull request
+# events but only for the live branch
+on:
+  pull_request:
+    branches: [ live ]
+    types: [closed]
+
+jobs:
+  deploy: 
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: false
+        fetch-depth: 0
+
+    # setup Hugo 0.73.0
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.73.0'
+        extended: true
+
+    # start the hugo static site generation.
+    - name: Build
+      run: hugo
+
+    # deploy the generated static pages to the external repo hosting the website
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.hugo_token }}
+        external_repository: psmag/psmag.github.io
+        user_name: 'psmag'
+        user_email: 'ravikanth@ravichaganti.com'
+        publish_branch: 'main'
+        cname: powershellmagazine.com
+
+    # tweet the article
+    - name: Tweet
+      if: ${{ !contains(github.event.pull_request.labels.*.name, 'skip_publish') }}
+      uses: ethomson/send-tweet-action@v1
+      with:
+        status: "${{ github.event.pull_request.title }} ${{ github.event.pull_request.body }}"
+        consumer-key: ${{ secrets.TWITTER_API_KEY }}
+        consumer-secret: ${{ secrets.TWITTER_API_SECRET_KEY }}
+        access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+        access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
