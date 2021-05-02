@@ -14,7 +14,6 @@ categories:
 tags:
   - Azure Pack
   - PowerShell DSC
-
 ---
 In this series,
 
@@ -349,7 +348,7 @@ At first the URL is constructed to acquire the GalleryItems. Every item which is
 
 ### New-WAPVMRoleParameterObject
 
-Now we have the data which came with the Gallery Item object (and some other functions, see <a href="http://104.131.21.239/2015/08/07/journey-to-a-windows-azure-pack-vm-role-dsc-resource-powershell-module-usage/" target="_blank">part 2</a> of this series), we need to fill in the missing (user specific) data needed to deploy the VM Role. What needs to filled in is mandatorily exposed to the View Definition so I created this function, New-WAPVMRoleParameterObject, to deal with this task.
+Now we have the data which came with the Gallery Item object (and some other functions, see <a href="/2015/08/07/journey-to-a-windows-azure-pack-vm-role-dsc-resource-powershell-module-usage/" target="_blank">part 2</a> of this series), we need to fill in the missing (user specific) data needed to deploy the VM Role. What needs to filled in is mandatorily exposed to the View Definition so I created this function, New-WAPVMRoleParameterObject, to deal with this task.
 
 ![](/images/wapmod6.png)
 

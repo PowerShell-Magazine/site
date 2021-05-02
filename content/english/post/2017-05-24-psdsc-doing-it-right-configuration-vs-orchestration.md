@@ -14,7 +14,6 @@ categories:
 tags:
   - DevOps
   - PowerShell DSC
-
 ---
 In the last part of this series, we looked at why [resource granularity](/2017/05/23/psdsc-doing-it-right-resource-granularity/) is important. In this part, we will see the difference between configuration items and orchestration steps.
 
@@ -79,4 +78,4 @@ Therefore when designing and developing a DSC resource module, apply this filter
 Stay tuned for more in this series!
 
 [1]: http://www.powershellmagazine.com/tag/psdscdir/
-[2]: http://wp.me/p1KBLb-3hX
+[2]: /2017/05/23/psdsc-doing-it-right-resource-granularity/

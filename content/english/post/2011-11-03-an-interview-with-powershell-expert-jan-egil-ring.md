@@ -4,10 +4,6 @@ author: PowerShellMagazine
 type: post
 date: 2011-11-03T14:42:12+00:00
 url: /2011/11/03/an-interview-with-powershell-expert-jan-egil-ring/
-views:
-  - 7934
-post_views_count:
-  - 1125
 categories:
   - Interviews
 tags:
@@ -34,5 +30,5 @@ The PowerShell Experts [video series][3] continues with the interview with [Ja
 
 [1]: http://theexpertsconference.com/
 [2]: http://powershellers.blogspot.com
-[3]: http://104.131.21.239/category/columns/interviews/video/
+[3]: /categories/interviews/
 [4]: http://blog.powershell.no/

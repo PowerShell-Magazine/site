@@ -4,10 +4,6 @@ author: Teresa Wilson (ScriptingWife)
 type: post
 date: 2011-12-01T20:00:18+00:00
 url: /2011/12/01/how-the-scripting-wife-got-started/
-views:
-  - 9257
-post_views_count:
-  - 1441
 categories:
   - Learning PowerShell
 tags:
@@ -31,4 +27,4 @@ Would you like to share your story? Win one of [TrainSignal&#8217;s][5] PowerShe
 [3]: http://powerscripting.wordpress.com/
 [4]: http://powershellgroup.org/node/213
 [5]: http://www.trainsignal.com/default.aspx
-[6]: http://104.131.21.239/2011/11/29/call-for-writers-share-your-experiences-and-help-new-users/
+[6]: /2011/11/29/call-for-writers-share-your-experiences-and-help-new-users/

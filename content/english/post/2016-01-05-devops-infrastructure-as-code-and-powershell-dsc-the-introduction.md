@@ -13,7 +13,6 @@ categories:
 tags:
   - DevOps
   - PowerShell DSC
-
 ---
 DevOps is the new cool thing (at least in the Windows world) everyone is talking about and the IT professionals (some of us at least) just give a blank stare every time the DevOps discussion comes up. We feel completely out of place. IT professionals are a part of the DevOps practices and not outside of it. With the rise of [web-scale infrastructures][1], it is important for IT organizations to be more agile and efficient to support the ever growing need for flexible infrastructures than a normal IT professional would have ever imagined. This article series intends to shed some light on DevOps and what it really means for the IT professionals like you and me, and finally explains how and where PowerShell Desired State Configuration plays a role. Let us start with the most [trusted definition of DevOps][2]:
 
@@ -51,5 +50,5 @@ In summary, as an IT professional, it is important for you to know what DevOps b
 
 [1]: http://www.webopedia.com/TERM/W/web-scale-it.html
 [2]: http://en.wikipedia.org/wiki/DevOps
-[3]: http://104.131.21.239/2015/07/13/git-for-it-professionals-getting-started-2/
-[4]: http://104.131.21.239/2015/12/01/pester-explained-introduction-and-assertions/
+[3]: /2015/07/13/git-for-it-professionals-getting-started-2/
+[4]: /2015/12/01/pester-explained-introduction-and-assertions/

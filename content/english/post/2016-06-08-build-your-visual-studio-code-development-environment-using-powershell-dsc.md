@@ -14,7 +14,6 @@ categories:
 tags:
   - PowerShell DSC
   - VS Code
-
 ---
 I keep re-building my lab machines and in the process I rebuild my development virtual machines. One of the items that gets reinstalled all the time is Visual Studio Code editor. Every time I do this, I end up installing VS Code and all the required extensions manually which isn&#8217;t a good use of keystrokes and mouse clicks (if any!). I knew how to install VS Code editor from the command line but I wasn&#8217;t sure about the extensions. So, that is when I reached out to David Wilson asking if there is a way to install these extensions using command line.
 
@@ -144,5 +143,5 @@ There are certainly a few things I want to improve in this and also add more res
 [4]: https://github.com/rchaganti/DSCResources/tree/master/vscode/DSCResources/vscodeextension
 [5]: https://github.com/rchaganti/DSCResources/tree/master/vscode#using-vscodesetup-resource
 [6]: https://github.com/rchaganti/DSCResources/tree/master/vscode#using-vscodeextension-resource
-[7]: http://104.131.21.239/2013/09/26/using-the-credential-attribute-of-dsc-file-resource/
+[7]: /2013/09/26/using-the-credential-attribute-of-dsc-file-resource/
 [8]: https://github.com/rchaganti/DSCResources/tree/master/vscode#todo

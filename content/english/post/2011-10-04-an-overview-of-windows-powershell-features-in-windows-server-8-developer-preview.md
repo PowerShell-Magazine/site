@@ -4,10 +4,6 @@ author: Jan Egil Ring
 type: post
 date: 2011-10-03T21:40:59+00:00
 url: /2011/10/04/an-overview-of-windows-powershell-features-in-windows-server-8-developer-preview/
-views:
-  - 31507
-post_views_count:
-  - 2886
 categories:
   - News
 tags:
@@ -169,7 +165,7 @@ It is amazing to see how the vision has turned into reality, and also what an im
 [6]: http://msdn.microsoft.com/en-us/library/windows/desktop/hh404218%28v=VS.85%29.aspx
 [7]: http://channel9.msdn.com/Events/BUILD/BUILD2011/SAC-422T
 [8]: http://channel9.msdn.com/Events/BUILD/BUILD2011/SAC-426T
-[9]: http://104.131.21.239/wp-content/uploads/2011/10/Windows_Server_Developer_Preview_PowerShell_Modules.zip
+[9]: /downloads/Windows_Server_Developer_Preview_PowerShell_Modules.zip
 [10]: https://connect.microsoft.com/PowerShell/feedback/details/692780/exposing-powershell-commands-in-server-8s-server-manager
 [11]: http://blog.powershell.no/2011/09/14/windows-powershell-web-access/
 [12]: http://blogs.msdn.com/b/powershell/archive/2007/03/19/monad-manifesto-the-origin-of-windows-powershell.aspx
