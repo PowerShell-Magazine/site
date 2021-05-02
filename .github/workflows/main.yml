@@ -6,7 +6,7 @@ name: Publish Blog Post
 # events but only for the live branch
 on:
   pull_request:
-    branches: [ live ]
+    branches: [ main ]
     types: [closed]
 
 jobs:
