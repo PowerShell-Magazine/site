@@ -37,7 +37,7 @@ jobs:
         personal_token: ${{ secrets.hugo_token }}
         external_repository: psmag/psmag.github.io
         user_name: 'psmag'
-        user_email: 'ravikanth@ravichaganti.com'
+        user_email: 'ravikanth.chaganti@gmail.com'
         publish_branch: 'main'
         cname: powershellmagazine.com
 
