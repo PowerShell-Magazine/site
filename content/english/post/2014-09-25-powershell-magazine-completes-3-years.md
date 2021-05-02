@@ -27,7 +27,7 @@ We want to take this opportunity to thank and congratulate the community membe
 Happy Birthday, PowerShell Magazine!
 
 [1]: /2011/09/12/announcing-the-launch-of-powershell-magazine-website/
-[2]: /featured-authors/
+[2]: /author/
 [3]: https://mvp.microsoft.com/en-us/mvp/Tobias%20Weltner-9199
 [4]: https://twitter.com/JanEgilRing
 [5]: https://becomelotr.wordpress.com/author/bartekbielawski/
