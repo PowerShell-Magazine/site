@@ -38,10 +38,10 @@ I am eagerly waiting for our 1000th post and 2 million visitors! I am sure that 
 A big thank you from the [editorial team][8]!
 
 [1]: http://www.goodreads.com/author/show/838305.Mother_Teresa
-[2]: /featured-authors/
+[2]: /author/
 [3]: https://twitter.com/powershellmag
 [4]: https://www.facebook.com/powershellmagazine
-[5]: /tag/tips-and-tricks/
+[5]: /tags/tips-and-tricks/
 [6]: /write-for-us/
 [7]: /2013/09/18/announcing-kemp-technologies-as-a-technology-partner/
 [8]: /about/

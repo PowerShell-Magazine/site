@@ -173,16 +173,21 @@ URL = "about"
 weight = 2
 
 [[Languages.en.menu.main]]
-name = "Write For Us"
+name = "Contribute"
 URL = "write-for-us"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "Feedback"
-URL = "feedback"
+name = "Authors"
+URL = "author"
 weight = 4
 
 [[Languages.en.menu.main]]
+name = "Feedback"
+URL = "feedback"
 weight = 5
+
+[[Languages.en.menu.main]]
+weight = 6
 name = "Disclaimer"
 url = "disclaimer"
