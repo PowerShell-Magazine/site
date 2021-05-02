@@ -39,8 +39,10 @@ I wrote the Posh-SSH module for automating testing of code I wrote in Ruby, Pyth
 
 The module is hosted in GitHub at <https://github.com/darkoperator/Posh-SSH>; all source code for the cmdlets and for the module is available there and it is licensed under the BSD 3-Clause License. The module requires PowerShell 3.0 and .NET Framework 4.0. The quickest way to install the module is by running:
 
-<pre class="brush: powershell; title: ; notranslate" title="">iex (New-Object Net.WebClient).DownloadString("https://gist.github.com/darkoperator/6152630/raw/c67de4f7cd780ba367cccbc2593f38d18ce6df89/instposhsshdev")
-</pre>
+```
+iex (New-Object Net.WebClient).DownloadString("https://gist.github.com/darkoperator/6152630/raw/c67de4f7cd780ba367cccbc2593f38d18ce6df89/instposhsshdev")
+```
+
 
 This will download the latest version of Posh-SSH and install it in the user’s profile. Once it finishes downloading and copying the module to the right place, it will list the commands available:
 

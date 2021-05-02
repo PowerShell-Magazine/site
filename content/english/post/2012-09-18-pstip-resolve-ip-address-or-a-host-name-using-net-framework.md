@@ -4,10 +4,6 @@ author: Jaap Brasser
 type: post
 date: 2012-09-18T18:00:32+00:00
 url: /2012/09/18/pstip-resolve-ip-address-or-a-host-name-using-net-framework/
-views:
-  - 18347
-post_views_count:
-  - 2831
 categories:
   - Tips and Tricks
 tags:
