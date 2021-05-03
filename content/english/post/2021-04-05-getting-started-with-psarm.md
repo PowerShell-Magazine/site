@@ -1,7 +1,7 @@
 ---
 title: Getting Started with PSArm
 author: Ravikanth C
-type: epic
+type: post
 date: 2021-04-05
 url: /2021/04/05/getting-started-with-arm/
 images:

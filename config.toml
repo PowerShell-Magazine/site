@@ -122,7 +122,7 @@ expire_days = 2
 ######################## sidebar widgets #########################
 [params.widgets]
 #sidebar = ["search", "about-me", "promotion", "authors", "subscription", "categories", "recent-post", "tags", "social"]
-sidebar = ["social", "search", "subscription", "recent-post"]
+sidebar = ["social", "search", "recent-post"]
 # available widget : search,about-me,authors,categories,tags,recent-post,social,promotion,subscription
 
 ############################# social site ########################
