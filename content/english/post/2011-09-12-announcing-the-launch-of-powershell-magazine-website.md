@@ -27,9 +27,9 @@ We have also enabled simplified UI for the mobile devices such as iPhone, etc. W
 ![](/images/iphone.png)
 
 
-We are already working on the second and third editions of PowerShell Magazine. If you are keen on writing for us, feel free to [submit your proposal][7]. If you are keen on sponsoring the articles or placing your ad banners on this site, reach us at ravikanth@ravichaganti.com.
+We are already working on the second and third editions of PowerShell Magazine. If you are keen on writing for us, feel free to [submit your proposal][7]. If you are keen on sponsoring the articles or placing your ad banners on this site, reach us at editors@powershellmagazine.com.
 
-We will interact with you on all available social networks (more or less!) to get your feedback and comments. You can follow us on Twitter at [@PowerShellMag][8], become a fan of our [Facebook page][9], or just send us an email at ravikanth@ravichaganti.com.
+We will interact with you on all available social networks (more or less!) to get your feedback and comments. You can follow us on Twitter at [@PowerShellMag][8], become a fan of our [Facebook page][9], or just send us an email at editors@powershellmagazine.com.
 
 Tell us what is your first impression of this site and what we need to improve by leaving comments here. Happy reading!
 
