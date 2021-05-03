@@ -5,12 +5,11 @@ type: epic
 date: 2021-05-08
 images: 
   - "/images/welcomehome.png"
-url: /2021/05/08/The-all-new-PowerShell-Magazine-is-here-and-more-to-come/
+url: /2021/05/03/The-all-new-PowerShell-Magazine-is-here-and-more-to-come/
 categories:
 - News
 tags:
 - News
-draft: true
 
 ---
 This one took a while but we finally moved to a new home! No more painful management of plugins and updates to PHP.
