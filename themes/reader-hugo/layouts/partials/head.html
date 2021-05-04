@@ -1,4 +1,5 @@
 <meta charset="utf-8">
+<link rel="stylesheet" href="{{ "css/syntax.css" | relURL }}">
 <title>{{with .Title}}{{.}}{{else}}{{site.Title}}{{end}}</title>
 
 <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">

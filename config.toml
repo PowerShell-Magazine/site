@@ -13,6 +13,16 @@ disqusShortname = "powershellmagazine" #
 # disable language
 disableLanguages = [] # desable language from here
 
+[markup.highlight]
+    codeFences = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    tabWidth = 4
+    noClasses = false
+    style = "dracula"
+
 ############################# Output ##############################
 [outputs]
 home = ["HTML", "RSS", "JSON"]
