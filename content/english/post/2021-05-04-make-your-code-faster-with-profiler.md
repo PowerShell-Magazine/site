@@ -53,7 +53,7 @@ In the end I had improved the performance by 30% or maybe more, but it was not a
 
 In fact I am 100% sure that I missed some, because I can now run Profiler against all my Pester tests. This is what it shows me:  
 
-![](/images/Pester.png)
+{{< figure src="/images/Pester.png" >}} {{< load-photoswipe >}}
 
 I look at the top 50 lines that took the longest to run, and see that TestDrive related code is ranking high in the list (marked yellow). The whole run took 54 seconds, and I spent ~15 seconds just handling test drive, so there are obviously some improvements to be made.
 
@@ -72,7 +72,7 @@ $trace = Trace-Script -ScriptBlock { & MyScript.ps1 }
 
 A module function:
 
-```powershell
+```PowerShell
 $trace = Trace-Script -ScriptBlock {
     Import-Module Planets
     Get-Planet
@@ -87,7 +87,7 @@ pwsh -NoProfile -NoExit { $trace = Trace-Script { . $Profile } }
 
 Once profiler finishes running, you will have the trace in your `$trace` variable and you can start by looking at `$trace.Top50Duration | Format-Table`: 
 
-![](/images/ProfileDuration.png)
+{{< figure src="/images/ProfileDuration.png" >}}
 
 Here I am showing breakdown of loading my `$profile`, ordered by `Duration`. Duration is how long a line took to execute, including all the code it called. Ordering by Duration is great for seeing which larger parts of your code take the most time.
 
@@ -95,7 +95,7 @@ From the first lines in my output you can see that it took 1.46s to load the who
 
 Now I am going to look at the top lines, ordered by `SelfDuration`. `SelfDuration` is how long the line took by itself. This is great for seeing every single piece of code that is slow.
 
-![](/images/ProfileSelfDuration.png)
+{{< figure src="/images/ProfileSelfDuration.png" >}}
 
 You can see that the slowest call is `$QuickAccess.Namespace("shell:::{679f85cb-0220-4080-b29b-5540cc05aab6}").Items() | ...`, this is part of zlocation module and takes 214ms, that is ~15% of the whole import.
 
@@ -111,7 +111,7 @@ $trace = Trace-Script {
 $trace.Top50Duration | Format-Table
 ```
 
-![](/images/DurationAndSelfDuration.png)
+{{< figure src="/images/DurationAndSelfDuration.png" >}}
 
 Notice that the first line has Duration of 1s, but SelfDuration of <1ms. This is because the call to `f` will return after 1s because it internally calls `Start-Sleep`, but by itself it takes almost no time at all. 
 
