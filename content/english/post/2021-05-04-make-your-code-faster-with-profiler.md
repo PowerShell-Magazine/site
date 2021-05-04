@@ -122,3 +122,5 @@ On the next line, you can see `Start-Sleep -Seconds 1`. It has both Duration and
 
 Profiler is a new module that can help you make your code faster. It gives an overview of hotspots in your code without any guessing. Hopefully it will help you write faster PowerShell code. If you try it out, please know that the module is under heavy development, so share your issues, feedback, or success stories in [Profiler issues](https://github.com/nohwnd/profiler/issues) or [start a discussion in Profiler](https://github.com/nohwnd/Profiler/discussions) to help make it better.
 
+
+
