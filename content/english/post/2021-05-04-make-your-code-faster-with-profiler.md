@@ -72,7 +72,7 @@ $trace = Trace-Script -ScriptBlock { & MyScript.ps1 }
 
 A module function:
 
-```PowerShell
+```powershell
 $trace = Trace-Script -ScriptBlock {
     Import-Module Planets
     Get-Planet
