@@ -20,7 +20,7 @@ Making PowerShell code faster has always been a difficult task. There are few **
 
 As you might know I develop [Pester](https://github.com/pester/pester), and last year I spent about a month solely trying to make Pester 5 faster. There was not a good tool to profile modules, and Mathias Jessen's [PSProfiler](https://www.powershellgallery.com/packages/PSProfiler/) unfortunately could not help me. I wanted a better solution that will inspect all the code I am running, and won't rely on AST and it's limitations. 
 
-### My naive approach to performance
+### My naïve approach to performance
 
 At that time there was no such tool, so this was my approach to performance: 
 
