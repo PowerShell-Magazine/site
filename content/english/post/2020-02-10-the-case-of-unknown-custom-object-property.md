@@ -48,11 +48,11 @@ This is a very minimal and simplified version of JSON that I have in the automat
 
 Here is what I tried.
 
-![image](/images/customobject1.png)
+{{< figure src="/images/customobject1.png" >}} {{< load-photoswipe >}}
 
 Now, that error is pretty strange. To investigate this, I looked at the type of object that was getting returned from the Where() method.
 
-![image](/images/customobject2.png)
+{{< figure src="/images/customobject2.png" >}}
 
 **Update (2/11):** Prasoon commented on this post and mentioned that the Item() method on this collection to update the status property. Here is how we do it based on his suggestion
 
@@ -64,11 +64,9 @@ What you see below is my investigation before Prasoon commented on this post!
 
 It should ideally be a PS custom object. The where() method is therefore doing something to the custom object. I tried, then, using the index of an object within the systems collection.
 
-c
-
 This is good. So, I can work around the issue with Where() method by using the index but the only catch here is that I need to dynamically determine the index of a specific object instance during the orchestration. I tried a couple of methods.
 
-![image](/images/customobject4.png)
+{{< figure src="/images/customobject4.png" >}}
 
 I was skeptical about the above method of using `where()` again. And, it does fail. The index of the object instance returned using this method is always -1. 
 
@@ -92,6 +90,6 @@ for ($currentIndex = 0; $currentIndex -lt $manifest.systems.Count; $currentIndex
 
 The above snippet does not look super optimal to me but works as expected.
 
-![image](/images/customobject5.png)
+{{< figure src="/images/customobject5.png" >}}
 
 I have not figured out any other optimal way of handling this but have you come across something like this? Do you see a better way to handle this?

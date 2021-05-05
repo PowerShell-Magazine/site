@@ -179,11 +179,11 @@ Alias           Resource -> New-PSArmResource                      0.1.0      PS
 
 With `Arm` keyword, you can specify an optional `Name` parameter which will be used as a name of the deployment within the template. For the resource definition, you use the `Resource` keyword. You must specify a `Name` to be used for the resource you want to provision, `Namespace` of the resource, `ApiVersion`, and `Type`.  As you enter arguments for these four parameters, you will see that PowerShell dynamically adds some more parameters based on the type of resource you intend to provision.
 
-![](/images/psarmresourceparam.png)
+{{< figure src="/images/psarmresourceparam.png" >}} {{< load-photoswipe >}}
 
 For example, as you see in the above screenshot, as soon as I added the `Type` parameter and its argument, I get `Kind` and `Tags` as the dynamic parameters. You can, then, use the `ArmSku` keyword to specify the SKU of the resource that you intend to provision. In case of a storage account, this can be set to Standard_LRS or any other supported value. Each Azure resource may need some more additional properties for resource provisioning and configuration. You can use the `properties` keyword for this purpose. PSArm gives you the auto-completion of property names within the `properties` block.
 
-![](/images/psaramresourceprop.png)
+{{< figure src="/images/psaramresourceprop.png" >}}
 
 Finally, the `output` keyword can be used to retrieve properties required from the deployed resource objects. This keyword takes `Name`, `Type`, and `Value` as parameters.
 
@@ -193,19 +193,19 @@ Here is a complete PSArm script for provisioning a simple storage account.
 
 ```powershell
 Arm -Name myFirstTemplate -Body {
-    Resource 'mypsarmsaccount' `
+    Resource 'mypsarmsaccount' `
              -Namespace 'Microsoft.Storage' `
              -Type 'storageAccounts' `
              -apiVersion '2019-06-01' `
              -Kind 'StorageV2' `
              -Location 'WestUS' {
-        ArmSku 'Standard_LRS'
-        Properties {
-            accessTier 'Hot'
-        }
-    }
+        ArmSku 'Standard_LRS'
+        Properties {
+            accessTier 'Hot'
+        }
+    }
 
-    Output 'storageResourceId' -Type 'string' -Value (ResourceId 'Microsoft.Storage/storageAccounts' (Concat 'myPsArmSaccount'))
+	Output 'storageResourceId' -Type 'string' -Value (ResourceId 'Microsoft.Storage/storageAccounts' (Concat 'myPsArmSaccount'))
 }
 ```
 
@@ -286,3 +286,4 @@ New-AzResourceGroupDeployment -ResourceGroupName psarm -TemplateFile .\firstTemp
 ```
 
 This is it. Congratulations. You just used PowerShell based DSL to generate and deploy an ARM template. In the next part of this series, you will learn more parameterizing PSArm scripts.
+

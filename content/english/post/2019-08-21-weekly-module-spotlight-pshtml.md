@@ -49,7 +49,7 @@ html {
 
 This generates the following HTML text.
 
-![image](/images/pshtml1.png)
+{{< figure src="/images/pshtml1.png" >}} {{< load-photoswipe >}}
 
 This is very easy. Let us give it some styles. 
 
@@ -78,7 +78,7 @@ html {
 
 This results in a HTML page as shown below!
 
-![image](/images/pshtml2.png)
+{{< figure src="/images/pshtml2.png" >}}
 
 This is all good but very trivial. Let us try generating some tables and we will use bootstrap for styles.
 
@@ -143,6 +143,6 @@ html {
 
 This results in a nice table shown below!
 
-![image](/images/pshtml3.png)
+{{< figure src="/images/pshtml3.png" >}}
 
 See how easy was that!? I will stop this article here as this is not a PSHTML tutorial. Hope you have got a good idea about how useful the module is. There are several [community members](https://github.com/Stephanevg/PSHTML) who did some great work with PSHTML. Check out their work as well.

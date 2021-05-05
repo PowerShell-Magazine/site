@@ -17,7 +17,7 @@ tags:
 ---
 June 2, 2020, PowerShell Conference Europe opens for the 5th time in Hannover, Germany. Here is a quick walkthrough for this year’s event. 
 
-## **Learning New Things**
+### Learning New Things
 
 As an experienced **PowerShell** professional, you know its awesome automation capabilities. 
 
@@ -41,7 +41,7 @@ If you never used Install-Module before, and the things in its background, know 
 
 This example is just the tiny tip of the iceberg. Sometimes it&#8217;s just a matter of hinting a powerful module that can make your day. Often, though, it&#8217;s a bit more complex to bring you to the next level, and add new skills. Check the agenda below, the speakers, and their sessions. Chances are there are tons of topics just waiting for you to improve your skill set and tickle your intellect.
 
-## Melting Pot of Creativity
+### Melting Pot of Creativity
 
 There is not _the one almighty super trainer_ that can teach everything in one class, and the more you know the harder it gets to learn new things in standard classes anyway. But there is _one_ place where you can meet them all: _psconf.eu_! 
 
@@ -68,7 +68,7 @@ To sign up and reserve your seat, or to get a proposal for your boss, please vis
 
 This year, we are working on a delegate jacket. It would help us a lot if you decided to sign up before March 15 for a number of reasons, including not to have to guess jacket sizes. Anyone signing up by March 15 gets a _guaranteed_ jacket size and make sure you get one of the limited seats. Anyone else gets a best-effort jacket size, and we are doing our best at extrapolating jacket sizes.
 
-## The Specs: Conference & Training Hybrid
+### The Specs: Conference & Training Hybrid
 
 _psconf.eu_ is a lot of things:
 
@@ -114,7 +114,7 @@ On the following days, typically groups form on their own and successfully tackl
 
 &#8211; **Session Recordings**: A significant amount of effort each year goes into session recordings. We don&#8217;t turn the conference into a huge video tutorial but want to make sure each attendee can recap sessions with a video. We make all of these videos freely available (<https://www.youtube.com/channel/UCxgrI58XiKnDDByjhRJs5fg>) after the conference on a best-effort basis. They can&#8217;t capture the many discussions, side events and personal talks. But they are very helpful to rewind through some of the topics and sessions and refresh the memory.
 
-## Sessions
+### Sessions
 
 Below please find the preliminary agenda. There are still some blind spots while we are waiting for the **PowerShell Team** to finalize their sessions. Since **PowerShell 7** is released this year, you can guess some of their topics.
 
@@ -124,7 +124,7 @@ Click a session to open a popup with the session abstract!
 
 A month prior to the conference when the agenda is finalized, we make available a conference app that you can use to start building your personal agenda and navigate the sessions during the conference.
 
-## Community Module Authors
+### Community Module Authors
 
 Chances are you are using community-authored **PowerShell** modules in your daily work. 
 
@@ -176,7 +176,7 @@ In his talks, Jan focuses on _Azure Functions_ in a hybrid world, and _Azure Pol
 
 &#8211; ISESteroids: _Dr. Tobias Weltner_ originally created ISESteroids (<https://www.powershellgallery.com/packages/ISESteroids>) to make his life easier while adding missing functionality to the built-in **PowerShell** ISE. Soon, public interest turned this into a commercial-grade product for anyone working with _Windows PowerShell_ and the _PowerShell ISE_. Tobias has started the _psconf.eu_ conference and lives in Hannover.
 
-## Book Signing
+### Book Signing
 
 Many of us have learned **PowerShell** using books, and we are humbled to have a number of renown **PowerShell** book authors from around the world with us. If you have learned by reading one of the books below, and still own your copy, bring it to have it signed by the author:
 
@@ -210,7 +210,7 @@ Many of us have learned **PowerShell** using books, and we are humbled to have a
 
 _&nbsp;_ _Dr. Tobias Weltner_ is running _psconf.eu_ and delivering **PowerShell** trainings throughout Europe.
 
-## Get Your Seat!
+### Get Your Seat!
 
 Don&#8217;t wait for too long and get your seat! In the past three years, _psconf.eu_ sold out every time.
 

@@ -76,6 +76,6 @@ Start-Polaris -Port 8080
 
 Once you start Polaris and load the routes, you can access http://localhost:8080 to see the content generated from a PS1 script. It should be like this!
 
-![image](/images/polaris1.png)
+{{< figure src="/images/polaris1.png" >}} {{< load-photoswipe >}}
 
 Hope you got a hang of what you can achieve with PSHTML and Polaris combined. I have built dashboards with simply this combination and nothing more. In the future posts, I will show one such example from my demo at PowerShell Conference Europe 2019.

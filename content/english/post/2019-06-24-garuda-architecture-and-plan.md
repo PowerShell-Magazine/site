@@ -25,7 +25,7 @@ In this part of the series, you will see the architecture proposal and the plan 
 
 To support the principles described, the framework needs a few moving parts. These moving parts provide the flexibility needed and gives you a choice of tooling.
 
-![image](/images/garuda1.png)
+{{< figure src="/images/garuda1.png" >}} {{< load-photoswipe >}}
 
 At a high-level, there are five components in this framework. 
 
