@@ -19,7 +19,7 @@ tags:
 
 <a rel="noreferrer noopener" aria-label="PowerShell Conference Asia 2019 (opens in a new tab)" href="http://psconference2017.azurewebsites.net/" target="_blank">PowerShell Conference Asia 2019</a> was held in Bangalore (India). It was such a great event and fun hosting it here. For the first time in the history of PowerShell Conference Asia we had 220+ PowerShell lovers at the conference. The pre-conference workshops were very well received and the rest two days of conference was equally fun. With over 15+ international speakers, the attendees had great time learning about their favorite features and getting their doubts cleared.
 
-![image](/images/psconfhigh.png) 
+{{< figure src="/images/psconfhigh.png" >}} {{< load-photoswipe >}}
 
 We have understood that the PowerShell community in India is really looking forward to the year 2020 event and there is already enough buzz about it in the local communities. We are looking forward to host more PowerShell lovers than the previous year and I am sure we are heading in that direction.
 

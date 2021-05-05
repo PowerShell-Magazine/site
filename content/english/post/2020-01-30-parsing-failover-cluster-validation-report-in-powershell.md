@@ -19,7 +19,7 @@ tags:
 ---
 If you have ever worked with the Test-Cluster command in the failover clustering module, you will know that this command generates an HTML report. This is visually good, for like IT managers, but not very appealing to people are automating infrastructure build process. There is no way this command provides any passthru type of functionality through which it returns the result object that can be easily parsed or used in PowerShell.
 
-![image](/images/failover1.png)
+{{< figure src="/images/failover1.png" >}} {{< load-photoswipe >}}
 
 As a part of some larger automation that I was building, I needed to parse the validation result into a PowerShell object that can be used later in the orchestration. Parsing HTML isn&#8217;t what I needed but a little of digging gave some clues about the XML report that gets generated when we run this command.
 
@@ -78,7 +78,7 @@ return $validationResultArray
 
 The input to the above script is the XML file that gets generated at C:\Windows\Temp. Once you run the script, you should see the output similar to what is shown below.
 
-![image](/images/failover2.png)
+{{< figure src="/images/failover2.png" >}} 
 
 I have only added the property values that I really need in my scripts but you can look at the XML and then easily modify the above script to add other details as you need. 
 

@@ -30,7 +30,7 @@ At Ignite 2019, PowerShell team introduced [secrets management](https://myignite
 Install-Module -Name Microsoft.PowerShell.SecretsManagement -AllowPrerelease
 ```
 
-![image](/images/secmgmt1.png)
+{{< figure src="/images/secmgmt1.png" >}} {{< load-photoswipe >}}
 
 This module uses the built-in credential manager for secrets management and provides the above commands for that purpose. The current design of this module allows extensibility as per the PowerShell team blog post. Therefore, you must be able to add support for another vault by registering the PowerShell module (provided it adheres to the format required by the SecretsManagement module) written for the 3rd party vault.
 

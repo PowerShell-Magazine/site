@@ -21,7 +21,7 @@ disableLanguages = [] # desable language from here
     lineNumbersInTable = false
     tabWidth = 4
     noClasses = false
-    style = "dracula"
+    style = "github"
 
 ############################# Output ##############################
 [outputs]
