@@ -79,6 +79,3 @@ function New-HttpQueryString
 }
 ```
 
-
-
-[1]: https://www.headphonage.com/

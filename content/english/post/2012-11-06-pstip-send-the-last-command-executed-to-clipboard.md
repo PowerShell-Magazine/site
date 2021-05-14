@@ -15,15 +15,21 @@ When I start writing a script, I generally start at the shell and make sure the 
 
 So, generally, I end up copying the last command I executed to either a blog post or a script. So, here is a small snippet I use to achieve that!
 
-<pre class="brush: powershell; title: ; notranslate" title="">(Get-History)[-1].commandline | clip
-</pre>
+```powershell
+(Get-History)[-1].commandline | clip
+```
+
 
 Simple! The trick to get the last executed command is to use an array index -1 which means the last item in the array. Now, all I need to do is put this in a simple function and put it in my profile for easy access:
 
-<pre class="brush: powershell; title: ; notranslate" title="">Function Copy-LastCommand {
- (Get-History)[-1].commandline | clip
+```powershell
+Function Copy-LastCommand {
+	(Get-History)[-1].commandline | clip
 }
-</pre>
+```
+
+
+
 
 <div>
 </div>

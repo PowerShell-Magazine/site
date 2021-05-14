@@ -3,7 +3,7 @@
 <!-- checking blog -->
 {{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
 
-{{ $sidebar:= site.Params.sidebar }}
+{{ $sidebar:= "none" }}
 {{ $hasbar:= or (eq $sidebar `left`) (eq $sidebar `right`)}}
 {{ $layout:= site.Params.post_layout}}
 {{ $widget:= site.Params.widgets.sidebar }}
@@ -94,7 +94,11 @@
               </ul>
             </li>
           </ul>
-          <div class="content">{{ .Content }}</div>
+          <div class="content">
+            {{ .Content }}
+            <!-- social here -->
+            {{ partial "share-buttons.html" . }}
+          </div>
         </article>
         <!-- comments -->
         {{ if site.DisqusShortname }}
@@ -123,7 +127,7 @@
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <div class="content">
-          {{.Content}}
+          {{.Content}}          
         </div>
       </div>
     </div>
