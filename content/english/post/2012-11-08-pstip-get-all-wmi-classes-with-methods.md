@@ -8,25 +8,30 @@ categories:
   - Tips and Tricks
 tags:
   - Tips and Tricks
-
 ---
 **Note**: This tip requires PowerShell 2.0 or above.
 
 When working with WMI and PowerShell, I often find it necessary to quickly generate a list of methods available in a WMI class. One way to do this is to examine the WMI class meta data. Let us see how:
 
-<pre class="brush: powershell; title: ; notranslate" title="">Get-WmiObject -Query 'Select * From Meta_Class WHERE __Class LIKE "win32%"' |
+```powershell
+Get-WmiObject -Query 'Select * From Meta_Class WHERE __Class LIKE "win32%"' |
 Where-Object { $_.PSBase.Methods } |
 Select-Object Name, Methods
-</pre>
+```
+
 
 This will list all Win32 WMI classes with methods.
 
 In Windows PowerShell 3.0, the same can be done using:
 
-<pre class="brush: powershell; title: ; notranslate" title="">Get-CimClass -ClassName win32* | where {$_.CimClassMethods} | select CimClassName,CimClassMethods
-</pre>
+```powershell
+Get-CimClass -ClassName win32* | where {$_.CimClassMethods} | select CimClassName,CimClassMethods
+```
+
 
 or
 
-<pre class="brush: powershell; title: ; notranslate" title="">Get-CimClass -ClassName win32* | where CimClassMethods -ne $null  | select CimClassName,CimClassMethods
-</pre>
+```powershell
+Get-CimClass -ClassName win32* | where CimClassMethods -ne $null  | select CimClassName,CimClassMethods
+```
+

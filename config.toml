@@ -2,14 +2,19 @@
 baseURL = "https://powershellmagazine.com"
 title = "PowerShell Magazine | For the most powerful community"
 theme = "reader-hugo"
+
 # post pagination
 paginate = "6"
+
 # post excerpt
 summaryLength = "20"
+
 # google analytics
 googleAnalytics = "UA-3619442-3"
+
 # disqus short name
-disqusShortname = "powershellmagazine" #
+disqusShortname = "powershellmagazine"
+
 # disable language
 disableLanguages = [] # desable language from here
 
@@ -17,8 +22,8 @@ disableLanguages = [] # desable language from here
     codeFences = true
     hl_Lines = ""
     lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = false
+    lineNos = true
+    lineNumbersInTable = true
     tabWidth = 4
     noClasses = false
     style = "github"
@@ -79,34 +84,40 @@ link = "plugins/search/mark.js"
 [[params.plugins.js]]
 link = "plugins/search/search.js"
 
-
 #################### default parameters ################################
 [params]
 favicon = "images/favicon.ico"
 logo = "images/logo.png"
 logo_width = "400px"
 menu_align = "center" # available option (left, right, or center )
+
 # Meta data
 author = "PowerShell Magazine"
 description = "For the most powerful community"
+
 # contact form action
 contact_form_action = "https://formspree.io/f/xknkobrj" # contact form works with https://formspree.io
+
 # Go to https://formspree.io, and create an account by click on signup button. Now verify your email address by click on varify button in the mail you got in your inbox. form action will looks like this contact_form_action = "https://formspree.io/your.name@email.com/" 
 
 # search
 search = true
+
 # featured
 featured_post = true
+
 # layout
-post_layout= "grid" # layout value (full, grid or list)
+post_layout= "list" # layout value (full, grid or list)
+
 # Sidebar
-sidebar = "right" # sidebar value (left, right or false)
+sidebar = "left" # sidebar value (left, right or false)
+
 # main taxonomy that will show at header and post card
 main_taxonomy = "tag" # optional value (tag or category)
 
 # Preloader
 [params.preloader]
-enable = false
+enable = true
 preloader = "" # use jpg, png, svg or gif format.
 
 # Subscription
