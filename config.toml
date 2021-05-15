@@ -2,14 +2,19 @@
 baseURL = "https://powershellmagazine.com"
 title = "PowerShell Magazine | For the most powerful community"
 theme = "reader-hugo"
+
 # post pagination
 paginate = "6"
+
 # post excerpt
 summaryLength = "20"
+
 # google analytics
 googleAnalytics = "UA-3619442-3"
+
 # disqus short name
-disqusShortname = "powershellmagazine" #
+disqusShortname = "powershellmagazine"
+
 # disable language
 disableLanguages = [] # desable language from here
 
@@ -99,7 +104,7 @@ contact_form_action = "https://formspree.io/f/xknkobrj" # contact form works wit
 search = true
 
 # featured
-featured_post = false
+featured_post = true
 
 # layout
 post_layout= "list" # layout value (full, grid or list)
