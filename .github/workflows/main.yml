@@ -38,7 +38,7 @@ jobs:
       with:
         personal_token: ${{ secrets.hugo_token }}
         external_repository: PowerShell-Magazine/website
-        user_name: 'rchaganti'
-        user_email: 'ravikanth@ravichaganti.com'
+        user_name: 'psmag'
+        user_email: 'ravikanth.chaganti@gmail.com'
         publish_branch: 'main'
         cname: powershellmagazine.com
