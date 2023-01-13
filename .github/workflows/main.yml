@@ -19,11 +19,11 @@ jobs:
         submodules: false
         fetch-depth: 0
 
-    # setup Hugo 0.73.0
+    # setup Hugo v0.109.0
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: '0.73.0'
+        hugo-version: '0.109.0'
         extended: true
 
     # start the hugo static site generation.
@@ -40,14 +40,3 @@ jobs:
         user_email: 'ravikanth.chaganti@gmail.com'
         publish_branch: 'main'
         cname: powershellmagazine.com
-
-    # tweet the article
-    - name: Tweet
-      if: ${{ !contains(github.event.pull_request.labels.*.name, 'skip_publish') }}
-      uses: ethomson/send-tweet-action@v1
-      with:
-        status: "${{ github.event.pull_request.title }} ${{ github.event.pull_request.body }}"
-        consumer-key: ${{ secrets.TWITTER_API_KEY }}
-        consumer-secret: ${{ secrets.TWITTER_API_SECRET_KEY }}
-        access-token: ${{ secrets.TWITTER_ACCESS_TOKEN }}
-        access-token-secret: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
