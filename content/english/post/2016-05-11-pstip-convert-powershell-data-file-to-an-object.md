@@ -16,9 +16,7 @@ tags:
 ---
 **Note**: This tip requires PowerShell 4.0 or later.
 
-Before PowerShell 4.0, if we had to convert the hash table in a PSD1 file into an object representation, we either used the _Import-LocalizedData_ cmdlet (not really meant for this purpose) or other means. For example, June Blender tweeted one such method.
-
-{{< tweet 729774380272640000 >}}
+Before PowerShell 4.0, if we had to convert the hash table in a PSD1 file into an object representation, we either used the _Import-LocalizedData_ cmdlet (not really meant for this purpose) or other means. 
 
 The _Invoke-Expression_ cmdlet can be evil if you don&#8217;t know what&#8217;s inside the hash table string and can cause serious security issues. There are of course other methods such as a method I used in my [PSBookmark][1] module. I just put the hash table string in a .PS1 file and dot-source the PS1 to create an object. However, there are other better ways to achieve this.
 

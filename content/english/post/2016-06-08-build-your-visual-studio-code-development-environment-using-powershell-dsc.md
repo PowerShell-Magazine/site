@@ -17,7 +17,7 @@ tags:
 ---
 I keep re-building my lab machines and in the process I rebuild my development virtual machines. One of the items that gets reinstalled all the time is Visual Studio Code editor. Every time I do this, I end up installing VS Code and all the required extensions manually which isn&#8217;t a good use of keystrokes and mouse clicks (if any!). I knew how to install VS Code editor from the command line but I wasn&#8217;t sure about the extensions. So, that is when I reached out to David Wilson asking if there is a way to install these extensions using command line.
 
-{{< tweet 739841414259826688 >}}
+{{< tweet user="ravikanth" id="739841414259826688" >}}
 
 David mentioned that this capability was coming to 1.2.0 and by evening I saw tweets from him that 1.2.0 is released. VS Code version 1.2.0 has the command line parameters for managing extensions.
 

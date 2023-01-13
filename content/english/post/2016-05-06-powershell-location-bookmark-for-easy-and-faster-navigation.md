@@ -18,7 +18,7 @@ I work at the command line most of the time and sometimes I find moving to cer
 
 So, this is when I started writing out something quick and added a few functions to my Profile script. And, then I tweeted that! 🙂
 
-{{< tweet 728151607762817024 >}}
+{{< tweet user="ravikanth" id="728151607762817024" >}}
 
 I saw a few suggestions as a response to this.
 

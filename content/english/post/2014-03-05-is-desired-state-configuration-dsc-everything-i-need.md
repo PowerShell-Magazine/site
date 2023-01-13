@@ -12,7 +12,7 @@ tags:
 ---
 My answer is no! At least, not everything I need right now. A few days ago, I tweeted some of my thoughts. I want to use this article to expand on that.
 
-{{< tweet 435043197329215488 >}}
+{{< tweet user="ravikanth" id="435043197329215488" >}}
 
 <span style="line-height: 1.5em;">Before I go ahead saying anything else, let me tell you that I am a BIG fan of DSC and its <a href="/2013/07/05/imperative-versus-declarative-syntax-in-powershell/">declarative style</a> of configuration management. </span>DSC is a new entrant in an already crowded space. But, DSC is significant because it is built into the operating system and it is standards based. PowerShell is one method to use DSC. With the initial release of DSC, product team at Microsoft did a great job. This is certainly a great step forward in realizing the Cloud OS vision. Given the technologies it depends on, it is fair to say that, at some point in time, we would be able to manage non-Windows systems too with DSC.
 

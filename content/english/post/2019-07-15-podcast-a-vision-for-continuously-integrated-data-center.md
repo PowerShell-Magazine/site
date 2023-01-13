@@ -19,7 +19,7 @@ I was recently featured on the [Latest Shiny Podcast](https://l8istsh9y.com/) ([
 
 A few weeks ago Rob (I knew him from his Dell days) tweeted about a probable topic for an upcoming episode.
 
-{{< tweet 1141490085822644229 >}}
+{{< tweet user="ravikanth" id="1141490085822644229" >}}
 
 Having written a couple of published books on PowerShell DSC and being in the infrastructure automation space, Infrastructure as Code (IaC) is close to my heart. Therefore, I just jumped in and said count me in! 
 
