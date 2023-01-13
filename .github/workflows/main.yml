@@ -35,8 +35,8 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         personal_token: ${{ secrets.hugo_token }}
-        external_repository: psmag/psmag.github.io
-        user_name: 'psmag'
-        user_email: 'ravikanth.chaganti@gmail.com'
+        external_repository: PowerShell-Magazine/website
+        user_name: 'rchaganti'
+        user_email: 'ravikanth@ravichaganti.com'
         publish_branch: 'main'
         cname: powershellmagazine.com
