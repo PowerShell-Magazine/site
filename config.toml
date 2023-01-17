@@ -160,7 +160,7 @@ link = "https://twitter.com/powershellmag"
 [[params.social]]
 name = "github"
 icon = "fab fa-github" # Fontawesome Icons : https://fontawesome.com/icons
-link = "https://github.com/psmag"
+link = "https://github.com/PowerShell-Magazine"
 
 [[params.social]]
 name = "youtube"

@@ -105,11 +105,7 @@
           </div>
         </article>
         <!-- comments -->
-        {{ if site.DisqusShortname }}
-        <div class="mt-5 border-default border p-4 bg-white">
-          {{ template "_internal/disqus.html" . }}
-        </div>
-        {{ end }}
+        {{ partial "comments.html" . }}
       </div>
 
       <!-- right sidebar -->

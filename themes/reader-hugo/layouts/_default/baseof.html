@@ -9,6 +9,7 @@
 	{{ partialCached "preloader.html" . }}
 	{{ partialCached "header.html" . }}
 	{{ block "main" . }}{{ end }}
+	{{ partial "analytics.html" . }}
 	{{ partial "footer.html" . }}
 	{{ partialCached "script.html" . }}
 </body>
